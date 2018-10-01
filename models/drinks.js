@@ -8,6 +8,6 @@ const drinkSchema = new Schema({
   image: String
 });
 
-const Drinks = mongoose.model("Drinks", DrinkSchema);
+const Drinks = mongoose.model("Drinks", drinkSchema);
 
 module.exports = Drinks;

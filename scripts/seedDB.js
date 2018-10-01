@@ -18,7 +18,7 @@ const drinkSeed = [
             ".5 oz honey syrup"
         ],
         directions: "shake, strain, top with champagne & lime wheel",
-        image: "./client/public/images/airmail.jpg"
+        image: "./images/airmail.jpg"
     },
     {
         name: "Amaretto Sour",
@@ -30,7 +30,7 @@ const drinkSeed = [
             "1⁄2 an egg white"
         ],
         directions: "dry shake, shake with ice, fine strain, ice cubes, lemon twist, cherry",
-        image: "./client/public/images/amaretto-sour.jpg"
+        image: "./images/amaretto-sour.jpg"
     },
     {
         name: "American Highball",
@@ -39,7 +39,7 @@ const drinkSeed = [
             "1.5 oz. Campari"
         ],
         directions: "build in a colins glass with ice, Top with club soda, an orange twist, and a half wheel of an orange",
-        image: "./client/public/images/highball.jpg"
+        image: "./images/highball.jpg"
     },
     {
         name: "Aperol Spritz",
@@ -49,7 +49,7 @@ const drinkSeed = [
             "2 oz. Champagne"
         ],
         directions: "Build in a white wine glass filled with cracked ice. Stir gently to combine. Garnish with a half wheel of orange",
-        image: "./client/public/images/aperol-spritz.jpg"
+        image: "./images/aperol-spritz.jpg"
     },
     {
         name: "Arsenic and old lace",
@@ -59,7 +59,7 @@ const drinkSeed = [
             ".25 oz. Crème de Violette"
         ],
         directions: "Stri, strain over an absinthe rinsed cup. Garnish with an orange twist.",
-        image: "./client/public/images/arsenic-and-old-lace.jpg"
+        image: "./images/arsenic-and-old-lace.jpg"
     },
     {
         name: "Aviation",
@@ -70,7 +70,7 @@ const drinkSeed = [
             ".25 oz. Simple Syrup (1:1)"
         ],
         directions: "Shave, strain over a creme de violette rinsed cup with brandied cherry in a glass.",
-        image: "./client/public/images/avation.jpg"
+        image: "./images/avation.jpg"
     },
     {
         name: "Bee's Knees",
@@ -80,7 +80,7 @@ const drinkSeed = [
             ".75 oz. Honey Syrup (2:1)"
         ],
         directions: "Shanke and strain. Garnish with a lemon wheel.",
-        image: "./client/public/images/bees-knees.jpg"
+        image: "./images/bees-knees.jpg"
     },
     {
         name: "Bellini",
@@ -89,7 +89,7 @@ const drinkSeed = [
             "1 oz. Peach Nectar (Kearn’s)"
         ],
         directions: "Top with Champagne",
-        image: "./client/public/images/bellini.jpg"
+        image: "./images/bellini.jpg"
     }, 
     {
         name: "Bijou",
@@ -100,7 +100,7 @@ const drinkSeed = [
             "1 dash Orange Bitters"
         ],
         directions: "Stir and strain. Garnish with a lemon twist",
-        image: "./client/public/images/bijou.jpg"
+        image: "./images/bijou.jpg"
     },
     {
         name: "Black Russian",
@@ -109,7 +109,7 @@ const drinkSeed = [
             ".75 oz. Kahlua"
         ],
         directions: "Stir, serve over rocks",
-        image: "./client/public/images/black-russian.jpg"
+        image: "./images/black-russian.jpg"
     },
     {
         name: "Bloody Mary",
@@ -123,7 +123,7 @@ const drinkSeed = [
             "5 oz. V8 Tomato Juice"
         ],
         directions: "Roll between tins with ice until chilled. Strain into a collons glass over ice. Garnish with olives ona skewer, a lemon wedge and a celery stick.",
-        image: "./client/public/images/bloody-mary.jpg"
+        image: "./images/bloody-mary.jpg"
     },
     {
         name: "Boulevardier",
@@ -133,7 +133,7 @@ const drinkSeed = [
             ".75 oz. Italian Rosso Vermouth"
         ],
         directions: "Short stir and pour over rocks. Garnish with an orange twist.",
-        image: "./client/public/images/boulevardier.jpg"
+        image: "./images/boulevardier.jpg"
     },
     {
         name: "Bramble",
@@ -143,7 +143,7 @@ const drinkSeed = [
             ".5 oz. Simple Syrup (1:1)"
         ],
         directions: "Gently crush 5 blackberries in bottom of a large rocks glass and add crushed ice on top. Shake and Strain into a prepped glass. Top with crushed ice and float .5oz of Creme de Mure. Garnish with a lemon wheel.",
-        image: "./client/public/images/bramble.jpg"
+        image: "./images/bramble.jpg"
     },
     {
         name: "Brandy Alexander",
@@ -153,7 +153,7 @@ const drinkSeed = [
             "1 oz. Heavy Cream"
         ],
         directions: "Shake and strain. Garnish with Nutmeg.",
-        image: "./client/public/images/brandy-alexander.jpg"
+        image: "./images/brandy-alexander.jpg"
     },
     {
         name: "Brooklynite",
@@ -164,7 +164,7 @@ const drinkSeed = [
             "2 dashes Angostura Bitters"
         ],
         directions: "Shake and strain. Garnish with a lime wheel.",
-        image: "./client/public/images/brooklynite.jpg"
+        image: "./images/brooklynite.jpg"
     }, 
     {
         name: "Caipirina",
@@ -175,7 +175,7 @@ const drinkSeed = [
             "3 lime wedges"
         ],
         directions: "Muddle then fill the tin with ice. Shake and dump. Serve with a straw.",
-        image: "./client/public/images/caipirina.jpg"
+        image: "./images/caipirina.jpg"
     },
     {
         name: "Champagne Cocktail",
@@ -184,7 +184,7 @@ const drinkSeed = [
             "3 dashes Angostura bitters"
         ],
         directions: "place sugar cube in a cup with bitters. Top with chilled champagne. Garnish with a spiraled lemon twist.",
-        image: "./client/public/images/champange-cocktail.jpg"
+        image: "./images/champange-cocktail.jpg"
     },
     {
         name: "Chartreuse Swizzle",
@@ -195,7 +195,7 @@ const drinkSeed = [
             ".75 oz. Fresh Lime"
         ],
         directions: "Build in a collins glass with crushed ice. Swizzle then add more crushed ice to just below the top of the glass. Hevily dash a layer of Angostura bitters. Agitate the bitters with a bar spoon to form a consistent layer. Top with fresh crushed ice up, over the rim of the glass. Garnish with grated nutmeg, mint sprig and a straw.",
-        image: "./client/public/images/chartreuse-swizzle.jpg"
+        image: "./images/chartreuse-swizzle.jpg"
     },
     {
         name: "Chrysanthemum",
@@ -205,7 +205,7 @@ const drinkSeed = [
             ".25 oz. Absinthe"
         ],
         directions: "Short stir and strain over rocks. Garnish with an orange twist.",
-        image: "./client/public/images/chrysanthemum.jpg"
+        image: "./images/chrysanthemum.jpg"
     },
     {
         name: "Clover Club",
@@ -218,7 +218,7 @@ const drinkSeed = [
             "1⁄2 an Egg White"
         ],
         directions: "Muddle the raspberries and shake. Then shake with ice and strain. Garnish with skewered raspberries and a lemon twist.",
-        image: "./client/public/images/clover-club.jpg"
+        image: "./images/clover-club.jpg"
     },
     {
         name: "Corn 'n Oil",
@@ -229,7 +229,7 @@ const drinkSeed = [
             "2 dashes Angostura Bitters"
         ],
         directions: "Muddle the lime. Hard shake with ice and dump into a double rocks glass.",
-        image: "./client/public/images/corn-oil.jpg"
+        image: "./images/corn-oil.jpg"
     },
     {
         name: "Daiquiri",
@@ -239,7 +239,7 @@ const drinkSeed = [
             ".75 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain.",
-        image: "./client/public/images/daiquri.jpg"
+        image: "./images/daiquri.jpg"
     },
     {
         name: "Eastside",
@@ -251,7 +251,7 @@ const drinkSeed = [
             "2 cucumber slices"
         ],
         directions: "Shake with 3 ice cubes. Strain into a large rocks glass with crushed ice. Garnish with a mint sprig and a cucumber slice.",
-        image: "./client/public/images/eastside.jpg"
+        image: "./images/eastside.jpg"
     },
     {
         name: "French 75",
@@ -261,7 +261,7 @@ const drinkSeed = [
             ".5 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain into a cup or champagne glass. Top wit champagne. Garnish with a lemon twist.",
-        image: "./client/public/images/french-75.jpg"
+        image: "./images/french-75.jpg"
     }, 
     {
         name: "Gimlet",
@@ -272,7 +272,7 @@ const drinkSeed = [
             "2 lime twists"
         ],
         directions: "Shake and strain over a rocks glass. Garnish with lime twists.",
-        image: "./client/public/images/gimlet.jpg"
+        image: "./images/gimlet.jpg"
     },
     {
         name: "Gin Rickey",
@@ -282,7 +282,7 @@ const drinkSeed = [
             ">.5 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain into a collins glass over ice. Add 1oz. club soda, and Garnish with a lime wedge.",
-        image: "./client/public/images/gin-rickey.jpg"
+        image: "./images/gin-rickey.jpg"
     },
     {
         name: "Godfather/Godmother",
@@ -291,7 +291,7 @@ const drinkSeed = [
             ".5 oz. DiSaronno"
         ],
         directions: "Stir in a rocks glass. If you are making a Godmother, substitute Vodka for the Scotch.",
-        image: "./client/public/images/godfather.jpg"
+        image: "./images/godfather.jpg"
     },
     {
         name: "Grasshopper",
@@ -302,7 +302,7 @@ const drinkSeed = [
             "8 Mint Leaves"
         ],
         directions: "Shake and strain. Garnish with a mint leaf.",
-        image: "./client/public/images/Grasshopper.jpg"
+        image: "./images/Grasshopper.jpg"
     },
     {
         name: "Hanky Panky",
@@ -312,7 +312,7 @@ const drinkSeed = [
             ".25 oz. Fernet"
         ],
         directions: "Stir and strain. Garnish with a lemon twist.",
-        image: "./client/public/images/hanky-panky.jpg"
+        image: "./images/hanky-panky.jpg"
     },
     {
         name: "Hemmingway Daiquiri",
@@ -325,6 +325,18 @@ const drinkSeed = [
             "2 lime twists"
         ],
         directions: "Shake and strain. Garnish with a lime wheel.",
-        image: "./client/public/images/hemmingway-daiquri.jpg"
+        image: "./images/hemmingway-daiquri.jpg"
     }
 ]
+
+db.Drinks
+  .remove({})
+  .then(() => db.Drinks.collection.insertMany(drinkSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from '../utils/api';
+import axios from "axios";
 
     class DrinkList extends Component {
         state = {
@@ -12,11 +13,16 @@ import API from '../utils/api';
         }
 
         loadDrinks = () => {
-
+        
+                // axios.get("/api/drinks")
+                //     .then(res => {
+                //         this.setState({ drinks: res.data });
+                //     })
+            
+                // }
             API.getDrinks()
                 .then(res => this.setState({ drinks: res.data }))
                 .catch(err => console.log(err));
-            // console.log(this.state.drinks);
         };
 
         render() {

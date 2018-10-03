@@ -75,7 +75,7 @@ const drinkSeed = [
             ".25 oz. Simple Syrup (1:1)"
         ],
         directions: "Shave, strain over a creme de violette rinsed cup with brandied cherry in a glass.",
-        image: "./images/avation.jpg",
+        image: "./images/aviation.jpg",
         favorite: "false"
     },
     {
@@ -200,7 +200,7 @@ const drinkSeed = [
             "3 dashes Angostura bitters"
         ],
         directions: "place sugar cube in a cup with bitters. Top with chilled champagne. Garnish with a spiraled lemon twist.",
-        image: "./images/champange-cocktail.jpg",
+        image: "./images/champagne-cocktail.jpg",
         favorite: "false"
     },
     {
@@ -260,7 +260,7 @@ const drinkSeed = [
             ".75 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain.",
-        image: "./images/daiquri.jpg",
+        image: "./images/daiquiri.jpg",
         favorite: "false"
     },
     {
@@ -354,7 +354,7 @@ const drinkSeed = [
             "2 lime twists"
         ],
         directions: "Shake and strain. Garnish with a lime wheel.",
-        image: "./images/hemmingway-daiquri.jpg",
+        image: "./images/hemmingway-daiquiri.jpg",
         favorite: "false"
     },
     {

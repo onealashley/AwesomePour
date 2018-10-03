@@ -20,3 +20,9 @@
 .App-intro {
   font-size: large;
 }
+
+.drink_image{
+  border: solid blue 10px;
+  height:200px;
+  width:300px;
+}

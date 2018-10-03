@@ -1,33 +1,34 @@
 import React, { Component } from 'react';
-import API from '../utils/api';
+import api from '../utils/api';
 
-
-    class Drinks extends Component {
+    class DrinkList extends Component {
         state = {
             drinks: []
         }
 
-
+ 
         componentDidMount() {
             this.loadDrinks();
+            console.log('drinks should be loaded.')
         }
 
         loadDrinks = () => {
-            API.getDrinks()
-                .then (res => this.setState({ drinks: res.data }))
+
+            api.getDrinks()
+                .then(res => this.setState({ drinks: res.data.image}))
                 .catch(err => console.log(err));
         };
 
         render() {
             return(
                 <div>
-                   {/* {JSON.stringify(this.state.drinks)} */}
+2                   {JSON.stringify(this.state.drinks)}
                 {this.state.drinks.map(drink =>(
-                    <img src = {drink.image} className='drink_image'></img>
+                    drink.image
                 ))}
                 </div>
             )
         }
     }
 
-export default Drinks;
+export default DrinkList;

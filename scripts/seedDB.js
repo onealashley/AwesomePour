@@ -737,9 +737,9 @@ const drinkSeed = [
      
 ]
 
-db.Drinks
+db.Drink
   .remove({})
-  .then(() => db.Drinks.collection.insertMany(drinkSeed))
+  .then(() => db.Drink.collection.insertMany(drinkSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

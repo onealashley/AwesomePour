@@ -2,7 +2,7 @@
   "name": "mern",
   "version": "1.0.0",
   "description": "Mern Demo",
-  "main": "electron-start.js",
+  "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -11,10 +11,7 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build",
-    "electron": "electron .",
-    "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
-    "homepage": "./"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",

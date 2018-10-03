@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import SearchBar from './Components/search';
-import DrinkList from './Components/drink_list';
+import Drinks from './pages/Drinks';
 
 
 class App extends Component {
@@ -13,7 +13,9 @@ class App extends Component {
           <h2>AwesomePour</h2>
           <SearchBar />
         </div>
-        <DrinkList />
+        <div>
+          <Drinks />
+        </div>
           
       </div>
     );

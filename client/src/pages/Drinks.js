@@ -21,9 +21,10 @@ import API from '../utils/api';
         render() {
             return(
                 <div>
-                   {JSON.stringify(this.state.drinks)}
+                
                 {this.state.drinks.map(drink =>(
                     <img src = {drink.image}></img>
+                    
                 ))}
                 </div>
             )

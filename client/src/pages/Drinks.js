@@ -21,6 +21,7 @@ import API from '../utils/api';
         render() {
             return(
                 <div>
+
                     
                    <div className = 'favs'>
                     <div className = 'drink_image'>
@@ -33,6 +34,7 @@ import API from '../utils/api';
                         <img src = {drink.image} ></img>
                         <span>{drink.name}</span>
                     </div>
+
                 ))}
                 </div>
             )

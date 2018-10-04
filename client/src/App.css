@@ -22,11 +22,10 @@
 }
 
 .drink_image{
-  height:170px;
+  height:200px;
   width:150px;
   margin:2px;
   display: inline-block;
-  padding: 5px;
 }
 
 .drink_image:hover{
@@ -36,4 +35,8 @@
 .drink_image img {
   height:150px;
   width:150px;
+}
+
+span {
+  font-size: .60em;
 }

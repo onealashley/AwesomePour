@@ -5,9 +5,10 @@ const drinkSchema = new Schema({
   name: { type: String, required: true },
   ingredients: [],
   directions: { type: String, required: true },
-  image: String
+  image: String,
+  favorite: Boolean
 });
 
-const Drinks = mongoose.model("Drinks", drinkSchema);
+const Drink = mongoose.model("Drink", drinkSchema);
 
-module.exports = Drinks;
+module.exports = Drink;

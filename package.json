@@ -11,10 +11,7 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build",
-    "electron": "electron .",
-    "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
-    "homepage": "./"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",

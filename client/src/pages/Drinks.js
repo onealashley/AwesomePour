@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import API from '../utils/api';
-import axios from "axios";
 
-    class DrinkList extends Component {
+
+    class Drinks extends Component {
         state = {
             drinks: []
         }
@@ -13,15 +13,8 @@ import axios from "axios";
         }
 
         loadDrinks = () => {
-        
-                // axios.get("/api/drinks")
-                //     .then(res => {
-                //         this.setState({ drinks: res.data });
-                //     })
-            
-                // }
             API.getDrinks()
-                .then(res => this.setState({ drinks: res.data }))
+                .then (res => this.setState({ drinks: res.data }))
                 .catch(err => console.log(err));
         };
 
@@ -30,11 +23,11 @@ import axios from "axios";
                 <div>
                    {JSON.stringify(this.state.drinks)}
                 {this.state.drinks.map(drink =>(
-                    drink.image
+                    <img src = {drink.image}></img>
                 ))}
                 </div>
             )
         }
     }
 
-export default DrinkList;
+export default Drinks;

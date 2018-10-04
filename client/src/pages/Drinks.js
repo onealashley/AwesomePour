@@ -21,9 +21,18 @@ import API from '../utils/api';
         render() {
             return(
                 <div>
-                   {JSON.stringify(this.state.drinks)}
+                    
+                   <div className = 'favs'>
+                    <div className = 'drink_image'>
+                        Favorites will appear heere whenever we have them
+                    </div>
+                   </div>
                 {this.state.drinks.map(drink =>(
-                    <img src = {drink.image}></img>
+                    
+                    <div className='drink_image'>
+                        <img src = {drink.image} ></img>
+                        <span>{drink.name}</span>
+                    </div>
                 ))}
                 </div>
             )

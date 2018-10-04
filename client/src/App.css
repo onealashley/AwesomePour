@@ -20,3 +20,20 @@
 .App-intro {
   font-size: large;
 }
+
+.drink_image{
+  height:170px;
+  width:150px;
+  margin:2px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.drink_image:hover{
+  border: white solid 2px;
+}
+
+.drink_image img {
+  height:150px;
+  width:150px;
+}

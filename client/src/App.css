@@ -49,3 +49,21 @@
   height:150px;
   width:150px;
 }
+
+.createLabel {
+  font-size: 30px;
+}
+
+.inputBox {
+  width: 80%;
+  height: 30px
+}
+
+.inputBox2 {
+  width: 80%;
+  height: 100px;
+}
+
+.linkBtn {
+  margin-inline-end: 10px
+}

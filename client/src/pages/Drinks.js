@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import API from '../utils/api';
+import SearchBar from '../Components/search';
+import Favorites from '../Components/favorites';
 
 
 class Drinks extends Component {
@@ -25,7 +27,15 @@ class Drinks extends Component {
         render() {
             return(   
                 <div>
-                <p>-----------------------------------------------------------------</p> 
+                    <div className="App-header">
+                        <h2>AwesomePour</h2>
+                        <SearchBar />
+                    </div>
+
+                    <div>
+                        <Favorites />
+                    </div>
+                    <p>-----------------------------------------------------------------</p> 
                     {this.state.drinks.map(drink =>(
                         
                         <div className='drink_image'>

@@ -29,6 +29,18 @@
   padding: 25px;
 }
 
+.favLabel {
+  font-size: 30px;
+}
+
+.favs {
+  height:170px;
+  width:150px;
+  margin:20px;
+  display: inline-block;
+  padding: 25px;
+}
+
 .drink_image:hover{
   border: white solid 2px;
 }

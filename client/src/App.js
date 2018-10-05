@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import SearchBar from './Components/search';
+import Favorites from './Components/favorites';
 import Drinks from './pages/Drinks';
 
 
@@ -12,6 +13,9 @@ class App extends Component {
         <div className="App-header">
           <h2>AwesomePour</h2>
           <SearchBar />
+        </div>
+        <div>
+          <Favorites />
         </div>
         <div>
           <Drinks />

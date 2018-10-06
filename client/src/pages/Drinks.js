@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component,} from 'react';
 import API from '../utils/api';
 import SearchBar from '../Components/search';
 import Favorites from '../Components/favorites';
+import { Link } from "react-router-dom";
+
+
 
 
 class Drinks extends Component {
@@ -39,8 +42,11 @@ class Drinks extends Component {
                     {this.state.drinks.map(drink =>(
                         
                         <div className='drink_image'>
-                            <img src = {drink.image} ></img>
-                            <span>{drink.name}</span>
+                            <Link to={"/details/" + drink._id}>   
+                                <img src = {drink.image} ></img>
+                                <span>{drink.name}</span>
+                            </Link>
+                           
                         </div>
 
                     ))}

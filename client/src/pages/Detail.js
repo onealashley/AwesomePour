@@ -19,10 +19,7 @@ class Drinks extends Component {
     render() {
         return (
             <div>
-                <div className="App-header">
-                    <h2>AwesomePour</h2>
-                    <SearchBar />
-                </div>
+
                 <div className='drinkinfo'>
                 <img src={this.state.drinkinfo.image && this.state.drinkinfo.image.slice(1)} /> 
                 {console.log(this.state.drinkinfo.image)}

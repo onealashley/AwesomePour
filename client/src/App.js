@@ -3,8 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import SearchBar from './Components/search';
 import Drinks from './pages/Drinks';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+  
 
 class App extends Component {
  

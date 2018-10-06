@@ -3,7 +3,11 @@ import axios from 'axios';
 
 export default {
     getDrinks: function(){
-        return axios.get("/api/drinks");
+      return axios.get("/api/drinks");
+    },
+
+    favDrinks: function() {
+      return axios.get("/api/favorites")
     },
     
     getDrink: function(id) {

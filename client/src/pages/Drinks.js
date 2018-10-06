@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import API from '../utils/api';
+import SearchBar from '../Components/search';
+import Favorites from '../Components/favorites';
 
 
-    class Drinks extends Component {
-        state = {
-            drinks: []
+class Drinks extends Component {
+    state = {
+        drinks: [],
+        
         }
 
 
         componentDidMount() {
             this.loadDrinks();
-        }
+        };
+        
+        
 
         loadDrinks = () => {
             API.getDrinks()
@@ -18,24 +23,27 @@ import API from '../utils/api';
                 .catch(err => console.log(err));
         };
 
+
         render() {
-            return(
+            return(   
                 <div>
-
-                    
-                   <div className = 'favs'>
-                    <div className = 'drink_image'>
-                        Favorites will appear heere whenever we have them
-                    </div>
-                   </div>
-                {this.state.drinks.map(drink =>(
-                    
-                    <div className='drink_image'>
-                        <img src = {drink.image} ></img>
-                        <span>{drink.name}</span>
+                    <div className="App-header">
+                        <h2>AwesomePour</h2>
+                        <SearchBar />
                     </div>
 
-                ))}
+                    <div>
+                        <Favorites />
+                    </div>
+                    <p>-----------------------------------------------------------------</p> 
+                    {this.state.drinks.map(drink =>(
+                        
+                        <div className='drink_image'>
+                            <img src = {drink.image} ></img>
+                            <span>{drink.name}</span>
+                        </div>
+
+                    ))}
                 </div>
             )
         }

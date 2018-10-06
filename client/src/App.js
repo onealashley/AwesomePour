@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import "./App.css";
-import SearchBar from './Components/search';
 import Drinks from './pages/Drinks';
+import Create from './pages/Create';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>AwesomePour</h2>
-          <SearchBar />
+      <Router>
+        <div className="App">
+          <div>
+          <Route exact path="/" component={Drinks} />
+          <Route exact path="/create" component={Create} />
+          </div>
+            
         </div>
-        <div>
-          <Drinks />
-        </div>
-          
-      </div>
+      </Router>
     );
   }
 }

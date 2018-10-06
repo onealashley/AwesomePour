@@ -32,7 +32,7 @@ const drinkSeed = [
         ],
         directions: "dry shake, shake with ice, fine strain, ice cubes, lemon twist, cherry",
         image: "./images/amaretto-sour.jpg",
-        favorite: "no"
+        favorite: "yes"
     },
     {
         name: "American Highball",

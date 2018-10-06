@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import "./App.css";
 import SearchBar from './Components/search';
 
 import nobleUpdate from "./utils/scaleConnect";
 import Drinks from './pages/Drinks';
+import Create from './pages/Create';
+import Detail from './pages/Detail'
 
 
 class App extends Component {
@@ -23,18 +26,17 @@ handleScaleUpdate = newScaleValue => {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>AwesomePour</h2>
+      <Router>
+        <div className="App">
+          <div>
           <h3>Scale Weight: {this.state.scaleValue}</h3>
-
-          <SearchBar />
+          <Route exact path="/" component={Drinks} />
+          <Route exact path="/create" component={Create} />
+          <Route exact path="/details/:id" component={Detail} />
+          </div>
+            
         </div>
-        <div>
-          <Drinks />
-        </div>
-          
-      </div>
+      </Router>
     );
   }
 }

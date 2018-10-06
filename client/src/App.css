@@ -28,6 +28,18 @@
   display: inline-block;
 }
 
+.favLabel {
+  font-size: 30px;
+}
+
+.favs {
+  height:170px;
+  width:150px;
+  margin:20px;
+  display: inline-block;
+  padding: 25px;
+}
+
 .drink_image:hover{
   border: white solid 2px;
 }
@@ -37,6 +49,25 @@
   width:150px;
 }
 
+<<<<<<< HEAD
 span {
   font-size: .60em;
+=======
+.createLabel {
+  font-size: 30px;
+}
+
+.inputBox {
+  width: 80%;
+  height: 30px
+}
+
+.inputBox2 {
+  width: 80%;
+  height: 100px;
+}
+
+.linkBtn {
+  margin-inline-end: 10px
+>>>>>>> master
 }

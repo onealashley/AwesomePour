@@ -6,7 +6,7 @@ const drinkSchema = new Schema({
   ingredients: [],
   directions: { type: String, required: true },
   image: String,
-  favorite: Boolean
+  favorite: { type: String, default: "yes" }
 });
 
 const Drink = mongoose.model("Drink", drinkSchema);

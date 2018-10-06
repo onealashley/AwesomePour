@@ -5,6 +5,7 @@ import "./App.css";
 import Drinks from './pages/Drinks';
 import Create from './pages/Create';
 import Detail from './pages/Detail'
+import SearchBar from './Components/search'
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <div>
+            <SearchBar />
           <Route exact path="/" component={Drinks} />
           <Route exact path="/create" component={Create} />
           <Route exact path="/details/:id" component={Detail} />

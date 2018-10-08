@@ -8,6 +8,7 @@ import nobleUpdate from "./utils/scaleConnect";
 import Drinks from './pages/Drinks';
 import Create from './pages/Create';
 import Detail from './pages/Detail'
+import SearchBar from './Components/search'
 
 
 class App extends Component {
@@ -30,6 +31,7 @@ handleScaleUpdate = newScaleValue => {
         <div className="App">
           <div>
           <h3>Scale Weight: {this.state.scaleValue}</h3>
+            <SearchBar />
           <Route exact path="/" component={Drinks} />
           <Route exact path="/create" component={Create} />
           <Route exact path="/details/:id" component={Detail} />

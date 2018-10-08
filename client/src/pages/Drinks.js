@@ -30,10 +30,7 @@ class Drinks extends Component {
         render() {
             return(   
                 <div>
-                    <div className="App-header">
-                        <h2>AwesomePour</h2>
-                        <SearchBar />
-                    </div>
+
 
                     <div>
                         <Favorites />

@@ -20,7 +20,7 @@ class SearchBar extends Component {
                 className={
                 window.location.pathname === "/create" ? "nav-link active" : "nav-link"
                 }
-                class="linkBtn"
+                className="linkBtn"
                 >
                 <button>Create your own Drink</button>
                 

@@ -47,7 +47,7 @@ class Create extends Component {
             <Favorites />
         </div>
         <form>
-            <p class="createLabel">Create your own drink</p>
+            <p className="createLabel">Create your own drink</p>
             <Input
                 value={this.state.title}
                 onChange={this.handleInputChange}
@@ -59,7 +59,7 @@ class Create extends Component {
             <Input
                 value={this.state.ingredients}
                 onChange={this.handleInputChange}
-                class="inputBox"
+                className="inputBox"
                 name="ingredients"
                 placeholder="Ingredients for the drink"
             />
@@ -67,7 +67,7 @@ class Create extends Component {
             <TextArea
                 value={this.state.directions}
                 onChange={this.handleInputChange}
-                class="inputBox2"
+                className="inputBox2"
                 name="directions"
                 placeholder="Directions to make the drink"
             />

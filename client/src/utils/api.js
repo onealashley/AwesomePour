@@ -13,6 +13,11 @@ export default {
     getDrink: function(id) {
       return axios.get("/api/drinks/" + id);
     },
+
+    getDrinkName: function(name) {
+      console.log(name, "inside api")
+      return axios.get("/api/drinks?name=" + name).then(response => response.data[0])
+    },
    
     deleteDrink: function(id) {
       return axios.delete("/api/drinks/" + id);

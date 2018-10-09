@@ -2,9 +2,8 @@ const db = require("../models");
 
 // Defining methods for the booksController
 module.exports = {
-  findAll: function(req, res) {
-    db.Drink
-      .aggregate([{$sample: {size: 30}}])
+  findAll: function(req, res) { 
+    db.Drink.find(req.query)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -13,6 +12,12 @@ module.exports = {
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  findByName: function(req, res) {
+    db.Drink
+      .findByName(req.params.name)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err))
   },
   create: function(req, res) {
     db.Drink

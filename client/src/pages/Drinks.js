@@ -39,7 +39,7 @@ class Drinks extends Component {
                     {this.state.drinks.map(drink =>(
                         
                         <div className='drink_image'>
-                            <Link to={"/details/" + drink._id}>   
+                            <Link to={"/detail/" + drink._id}>   
                                 <img src = {drink.image} ></img>
                                 <span>{drink.name}</span>
                             </Link>

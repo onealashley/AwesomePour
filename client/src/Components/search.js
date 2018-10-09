@@ -53,10 +53,14 @@ class SearchBar extends Component {
                 
             </Link>
 
+            <br></br>
+            <br></br>
+
             <input 
             value = {this.state.term}
             onChange={this.handleInputChange} 
             />
+            
             <button onClick={this.navigateToDetailPage}>Search By Name</button>
         </div>
         );

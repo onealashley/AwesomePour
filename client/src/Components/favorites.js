@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import API from '../utils/api';
+import { Link } from "react-router-dom"
 
 class Favorites extends Component {
     state = {
@@ -29,9 +30,10 @@ class Favorites extends Component {
                 
 
                 <div className='drink_image'>
-                   
-                    <img src = {favDrink.image} ></img>
-                    <span>{favDrink.name}</span>
+                <Link to={"/detail/" + favDrink._id}>   
+                        <img src = {favDrink.image} ></img>
+                        <span>{favDrink.name}</span>
+                    </Link>
                </div>
                 ))}
             </div>

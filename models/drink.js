@@ -6,7 +6,8 @@ const drinkSchema = new Schema({
   ingredients: [],
   directions: { type: String, required: true },
   image: String,
-  favorite: { type: String, default: "yes" }
+  favorite: { type: String, default: "yes" },
+  category: String
 });
 
 const Drink = mongoose.model("Drink", drinkSchema);

@@ -16,10 +16,10 @@ class App extends Component {
       <Router>
         <div className="App">
           <div>
-            <SearchBar />
+          <SearchBar />
           <Route exact path="/" component={Drinks} />
           <Route exact path="/create" component={Create} />
-          <Route exact path="/details/:id" component={Detail} />
+          <Route exact path="/detail/:id" component={Detail} />
           </div>
             
         </div>

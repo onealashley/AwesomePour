@@ -3,6 +3,13 @@ import API from '../utils/api';
 import SearchBar from '../Components/search';
 import Favorites from '../Components/favorites';
 import { Link } from "react-router-dom";
+import Gin from "../Components/gin"
+import Rum from "../Components/rum"
+import Vodka from "../Components/vodka"
+import Bourbon from "../Components/bourbon"
+import Champagne from "../Components/champagne"
+import Misc from "../Components/misc"
+import Nonalcoholic from "../Components/nonalcoholic"
 
 
 
@@ -36,17 +43,14 @@ class Drinks extends Component {
                         <Favorites />
                     </div>
                     <p>-----------------------------------------------------------------</p> 
-                    {this.state.drinks.map(drink =>(
-                        
-                        <div className='drink_image'>
-                            <Link to={"/details/" + drink._id}>   
-                                <img src = {drink.image} ></img>
-                                <span>{drink.name}</span>
-                            </Link>
-                           
-                        </div>
-
-                    ))}
+                    
+                    <Gin />
+                    <Rum />
+                    <Vodka />
+                    <Bourbon />
+                    <Champagne />
+                    <Misc />
+                    <Nonalcoholic />
                 </div>
             )
         }

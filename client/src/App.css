@@ -1,24 +1,76 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
+  height: 100%;
+
 }
+
+
+/* .App-header {
+  height: 150px;
+
+} */
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.drink_image{
+  height:200px;
+  width:150px;
+  margin:2px;
+  display: inline-block;
+}
+
+.favLabel {
+  font-size: 30px;
+}
+
+.favs {
+  height:170px;
+  width:150px;
+  margin:20px;
+  display: inline-block;
+  padding: 25px;
+}
+
+.drink_image:hover{
+  border: white solid 2px;
+}
+
+.drink_image img {
+  height:150px;
+  width:150px;
+}
+
+.createLabel {
+  font-size: 30px;
+}
+
+.inputBox {
+  width: 80%;
+  height: 30px
+}
+
+.inputBox2 {
+  width: 80%;
+  height: 100px;
+}
+
+.linkBtn {
+  margin-inline-end: 10px
+}
+
+.drinkinfo {
+  height: 100%;
+  width: 30%;
+  margin-top: 100px;
+}
+
+.drinkinfo img {
+  width: 300px;
+  height: 300px;
+  border: solid white 1px;
 }

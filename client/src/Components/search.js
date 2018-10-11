@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import API from "../utils/api"
 
 class SearchBar extends Component {
    
@@ -7,21 +8,38 @@ class SearchBar extends Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //     term: ''
-        // }
+        this.state = {
+            term: '',
+            drinkName: "",
+            drink: {},
+            weight:" Not Connected"
+        }
     }
 
-    state={
-        term:'',
-        weight:" Not Connected"
-    }
-    
+    handleInputChange = (event) => {
+
+        const { value } = event.target;
+        this.setState({
+          term: value
+        }, () => {
+            console.log(this.state.term)
+              API.getDrinkName(this.state.term)
+                .then(response => {
+                    console.log(response)
+                    this.setState({drink: response})
+                })
+            
+        })
+      }
+
+      navigateToDetailPage = () => {
+          window.location.pathname = "detail/" + this.state.drink._id;
+      }
 
 
 
     render() {
-        return (
+        return ( 
         <div className='app-header'>
             <h3>Scale Weight: {this.state.weight}</h3>
             <h2>AwesomePour</h2>
@@ -31,19 +49,24 @@ class SearchBar extends Component {
                 className={
                 window.location.pathname === "/create" ? "nav-link active" : "nav-link"
                 }
-                class="linkBtn"
+                className="linkBtn"
                 >
                 <button>Create your own Drink</button>
                 
             </Link>
 
+            <br></br>
+            <br></br>
+
             <input 
             value = {this.state.term}
-            onChange = {event => this.setState({term: event.target.value})} 
+            onChange={this.handleInputChange} 
             />
 
             <button onClick={this.connect
                 } > Connect to Scale</button>
+            
+            <button onClick={this.navigateToDetailPage}>Search By Name</button>
         </div>
         );
     }

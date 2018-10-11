@@ -33,7 +33,7 @@ class Rum extends Component {
                    
                    <Link to={"/detail/" + rum._id}>   
                         <img src = {rum.image} ></img>
-                        <span>{rum.name}</span>
+                        <span>{rum.title}</span>
                     </Link>
                </div>
                 ))}

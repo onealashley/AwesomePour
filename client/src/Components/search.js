@@ -41,7 +41,7 @@ class SearchBar extends Component {
         <div className='app-header'>
         
             <h2>AwesomePour</h2>
-            <Link
+            {/* <Link
                 
                 to="/create"
                 className={
@@ -51,7 +51,7 @@ class SearchBar extends Component {
                 >
                 <button>Create your own Drink</button>
                 
-            </Link>
+            </Link> */}
 
             <br></br>
             <br></br>

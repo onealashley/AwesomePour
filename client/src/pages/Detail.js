@@ -26,13 +26,10 @@ class Drinks extends Component {
 
                     <h1>
 
-                        {this.state.drinkinfo.name}
+                        {this.state.drinkinfo.title}
                     
                     </h1>
 
-  
-
-                  
                     
                     {this.state.drinkinfo.ingredients && this.state.drinkinfo.ingredients.map(ingredient =>(
                         

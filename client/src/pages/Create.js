@@ -6,10 +6,11 @@ import { Input, TextArea, FormBtn } from "../Components/Form";
 
 class Create extends Component {
     state = {
-        books: [],
+        drinks: [],
         name: "",
         ingredients: [],
-        directions: ""
+        directions: "",
+        category: ""
     };
 
     handleInputChange = event => {
@@ -21,11 +22,12 @@ class Create extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        if (this.state.title && this.state.author) {
+        if (this.state.name && this.state.ingredients) {
             API.saveDrink({
-                title: this.state.title,
-                author: this.state.author,
-                synopsis: this.state.synopsis
+                title: this.state.name,
+                author: this.state.category,
+                synopsis: this.state.ingredients,
+                synopsis: this.state.directions
             })
                 .then(res => this.loadBooks())
                 .catch(err => console.log(err));

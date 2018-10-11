@@ -42,9 +42,9 @@ export default {
       return axios.get("/api/drinks/" + id);
     },
 
-    getDrinkName: function(name) {
-      console.log(name, "inside api")
-      return axios.get("/api/drinks?name=" + name).then(response => response.data[0])
+    getDrinkName: function(title) {
+      console.log(title, "inside api")
+      return axios.get("/api/drinks?title=" + title).then(response => response.data[0])
     },
    
     deleteDrink: function(id) {
@@ -52,7 +52,8 @@ export default {
     },
     
     saveDrink: function(drinkData) {
-      return axios.post("/api/drinks", drinkData);
+      console.log("something")
+      return axios.post("/api/drinks", drinkData).then(response => console.log(drinkData))
     }
   };
   

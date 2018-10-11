@@ -33,7 +33,7 @@ class Misc extends Component {
                    
                    <Link to={"/detail/" + misc._id}>   
                         <img src = {misc.image} ></img>
-                        <span>{misc.name}</span>
+                        <span>{misc.title}</span>
                     </Link>
                </div>
                 ))}

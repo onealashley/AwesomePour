@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 
+
 class SearchBar extends Component {
 
     constructor(props) {
@@ -13,11 +14,10 @@ class SearchBar extends Component {
 
     render() {
         return (
-        <div className='app-header'>
+        <div className='app-header jumbotron'>
         
-            <h2>AwesomePour</h2>
+            <h1 id='title'>AwesomePour</h1>
             <Link
-                
                 to="/create"
                 className={
                 window.location.pathname === "/create" ? "nav-link active" : "nav-link"

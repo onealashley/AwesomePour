@@ -4,7 +4,7 @@ const db = require("../models");
 module.exports = {
   findAll: function(req, res) {
     db.Drink
-      .aggregate([{$sample: {size: 30}}])
+      .aggregate([{$sample: {size: 27}}])
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

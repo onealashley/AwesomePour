@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-color: #222;
+  background-color: #eee;
   padding: 20px;
-  color: white;
+  color: #3d3d3d;
   height: 100%;
 
 }
@@ -17,11 +17,19 @@
   font-size: large;
 }
 
+#title {
+  color: orange;
+}
+
 .drink_image{
   height:200px;
   width:150px;
   margin:2px;
-  display: inline-block;
+  display: inline-block; 
+}
+
+.drink_image a{
+  color: #3d3d3d;
 }
 
 .favLabel {
@@ -73,4 +81,31 @@
   width: 300px;
   height: 300px;
   border: solid white 1px;
+}
+
+
+
+.slide {
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+.arrow:hover{
+  border:3px white solid;
+  font-size:2em;
+}
+
+.arrow{
+  color: orange;
+}
+.carousel{
+  height: 300px;
+  width: 500px;
+  border: solid 1px blue;
+}
+.carousel-wrapper {
+  height: 300px;
+  width: 300px;
+  float: left;
 }

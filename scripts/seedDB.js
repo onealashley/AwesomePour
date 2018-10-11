@@ -11,7 +11,7 @@ mongoose.connect(
 
 const drinkSeed = [
     {
-        name: "Airmail",
+        title: "Airmail",
         ingredients: [
             "1oz white rum",
             ".5oz fresh lime",
@@ -23,7 +23,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        name: "Amaretto Sour",
+        title: "Amaretto Sour",
         ingredients: [
             "1.5 oz Disaronno",
             ".75 oz. Overproof Bourbon",
@@ -37,7 +37,7 @@ const drinkSeed = [
         category: "bourbon"
     },
     {
-        name: "American Highball",
+        title: "American Highball",
         ingredients: [
             "1.5 oz. Italian Rosso Vermouth",
             "1.5 oz. Campari"
@@ -48,7 +48,7 @@ const drinkSeed = [
         category: "whiskey"
     },
     {
-        name: "Aperol Spritz",
+        title: "Aperol Spritz",
         ingredients: [
             "2 oz. Aperol",
             "2 oz. Chilled club soda",
@@ -60,7 +60,7 @@ const drinkSeed = [
         category: "champagne"
     },
     {
-        name: "Arsenic and old lace",
+        title: "Arsenic and old lace",
         ingredients: [
             "2 oz. London Dry Gin",
             ".75 oz. Dry Vermouth",
@@ -72,7 +72,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Aviation",
+        title: "Aviation",
         ingredients: [
             "2 oz. Plymouth Gin",
             ".75 oz. Fresh Lemon",
@@ -85,7 +85,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Bee's Knees",
+        title: "Bee's Knees",
         ingredients: [
             "2 oz. Plymouth Gin",
             ".75 oz. Fresh Lemon",
@@ -97,7 +97,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Bellini",
+        title: "Bellini",
         ingredients: [
             ".4 oz. Crème de Peche",
             "1 oz. Peach Nectar (Kearn’s)"
@@ -108,7 +108,7 @@ const drinkSeed = [
         category: "champagne"
     }, 
     {
-        name: "Bijou",
+        title: "Bijou",
         ingredients: [
             "1.5 oz. Plymouth Gin",
             "1 oz. Italian Rosso Vermouth",
@@ -121,7 +121,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Black Russian",
+        title: "Black Russian",
         ingredients: [
             "2 oz. Vodka",
             ".75 oz. Kahlua"
@@ -132,7 +132,7 @@ const drinkSeed = [
         category: "vodka"
     },
     {
-        name: "Bloody Mary",
+        title: "Bloody Mary",
         ingredients: [
             "2 oz. Vodka",
             "<.75 oz. Fresh Lemon",
@@ -148,7 +148,7 @@ const drinkSeed = [
         category: "vodka"
     },
     {
-        name: "Boulevardier",
+        title: "Boulevardier",
         ingredients: [
             "1.5 oz. Bourbon",
             ".75 oz. Campari",
@@ -160,7 +160,7 @@ const drinkSeed = [
         category: "bourbon"
     },
     {
-        name: "Bramble",
+        title: "Bramble",
         ingredients: [
             "1.5 oz. Overproof Gin",
             ".75 oz. Fresh Lemon",
@@ -172,7 +172,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Brandy Alexander",
+        title: "Brandy Alexander",
         ingredients: [
             "1 oz. Cognac",
             "1 oz. Dark Crème de Cacao",
@@ -184,7 +184,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        name: "Brooklynite",
+        title: "Brooklynite",
         ingredients: [
             "2 oz. Aged Jamaican Rum",
             ".75 oz. Fresh Lime",
@@ -197,7 +197,7 @@ const drinkSeed = [
         category: "rum"
     }, 
     {
-        name: "Caipirina",
+        title: "Caipirina",
         ingredients: [
             "2 oz. Cachaca",
             "<.5 oz. Simple Syrup (1:1)",
@@ -210,7 +210,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        name: "Champagne Cocktail",
+        title: "Champagne Cocktail",
         ingredients: [
             "Sugar cube",
             "3 dashes Angostura bitters"
@@ -221,7 +221,7 @@ const drinkSeed = [
         category: "champagne"
     },
     {
-        name: "Chartreuse Swizzle",
+        title: "Chartreuse Swizzle",
         ingredients: [
             "1.25 oz. Green Chartreuse",
             ".5 oz. Falernum",
@@ -234,7 +234,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        name: "Chrysanthemum",
+        title: "Chrysanthemum",
         ingredients: [
             "2 oz. Dry Vermouth",
             ".75 oz. Benedictine",
@@ -246,7 +246,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        name: "Clover Club",
+        title: "Clover Club",
         ingredients: [
             "1.5 oz. London Dry Gin",
             ".5 oz. Dry Vermouth",
@@ -261,7 +261,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Corn 'n Oil",
+        title: "Corn 'n Oil",
         ingredients: [
             "2 oz. Blackstrap Rum",
             ".25 oz. Falernum",
@@ -274,7 +274,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        name: "Daiquiri",
+        title: "Daiquiri",
         ingredients: [
             "2 oz. White Rum",
             "<1 oz. Fresh Lime",
@@ -286,7 +286,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        name: "Eastside",
+        title: "Eastside",
         ingredients: [
             "2 oz. London Dry Gin",
             ".75 oz. Fresh Lemon",
@@ -300,7 +300,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "French 75",
+        title: "French 75",
         ingredients: [
             "1 oz. London Dry Gin",
             ".5 oz. Fresh Lemon",
@@ -312,7 +312,7 @@ const drinkSeed = [
         category: "gin"
     }, 
     {
-        name: "Gimlet",
+        title: "Gimlet",
         ingredients: [
             "2 oz. London Dry Gin",
             "<1 oz. Fresh Lime",
@@ -325,7 +325,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Gin Rickey",
+        title: "Gin Rickey",
         ingredients: [
             "1.5 oz. London Dry Gin",
             ".75 oz. Fresh Lime",
@@ -337,7 +337,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Godfather/Godmother",
+        title: "Godfather/Godmother",
         ingredients: [
             "2 oz. Blended Scotch (J&B/Famous Grouse)",
             ".5 oz. DiSaronno"
@@ -348,7 +348,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        name: "Grasshopper",
+        title: "Grasshopper",
         ingredients: [
             "1 oz. White Crème de Cacao",
             "1 oz. Green Crème de Menthe",
@@ -361,7 +361,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        name: "Hanky Panky",
+        title: "Hanky Panky",
         ingredients: [
             "1.5 oz. London Dry Gin",
             "1.5 oz. Italian Rosso Vermouth",
@@ -373,7 +373,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        name: "Hemmingway Daiquiri",
+        title: "Hemmingway Daiquiri",
         ingredients: [
             "2 oz. White Rum",
             ".75 oz. Fresh Lime",
@@ -388,7 +388,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        name: "Hot Toddy",
+        title: "Hot Toddy",
         ingredients: [
             "2 oz. Bourbon",
             "3.5 oz. Black Tea",
@@ -402,7 +402,7 @@ const drinkSeed = [
         category: "bourbon"
     },
     {
-        name: "Irish Coffee",
+        title: "Irish Coffee",
         ingredients: [
             "2.5 oz. Water",
             "2 oz. Irish Whiskey",
@@ -415,7 +415,7 @@ const drinkSeed = [
         category: "whiskey"
     },
     {
-        name: "Japanese Cocktail",
+        title: "Japanese Cocktail",
         ingredients: [
             "2.5 oz. Cognac",
             ".5 oz. Orgeat",
@@ -427,7 +427,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        name: "Kir",
+        title: "Kir",
         ingredients: [
             "<.5 oz. Crème de Cassis",
             "Dry White Wine"                    
@@ -438,7 +438,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        name: "Kir Royale",
+        title: "Kir Royale",
         ingredients: [
             "<.5 oz. Crème de Framboise",
             "Champagne"                    
@@ -449,7 +449,7 @@ const drinkSeed = [
         category: "champagne"        
     },
     {
-        name: "Last Word",
+        title: "Last Word",
         ingredients: [
             "<.75 oz. London Dry Gin",
             ".75 oz. Luxardo Maraschino Liqueur",
@@ -462,7 +462,7 @@ const drinkSeed = [
         category: "gin"       
     },
     {
-        name: "Long Island Iced Tea",
+        title: "Long Island Iced Tea",
         ingredients: [
             "<.5 oz. Vodka",
             ".5 oz. Blanco Tequila",
@@ -477,7 +477,7 @@ const drinkSeed = [
         category: "vodka"       
     },
     {
-        name: "Mai Tai",
+        title: "Mai Tai",
         ingredients: [
             "1 oz. Aged Jamaican Rum",
             "1 oz. Agricole Blanc",
@@ -492,7 +492,7 @@ const drinkSeed = [
         category: "rum"       
     },
     {
-        name: "Manhattan",
+        title: "Manhattan",
         ingredients: [
             "2.5 oz. Bourbon OR Rye whiskey",
             "1 oz. Italian Rosso Vermouth",
@@ -504,7 +504,7 @@ const drinkSeed = [
         category: "bourbon"       
     },
     {
-        name: "Margarita",
+        title: "Margarita",
         ingredients: [
             "2 oz. Blanco Tequila",
             ".75 oz. Cointreau (Combier is better if you have it)",
@@ -517,7 +517,7 @@ const drinkSeed = [
         category: "misc"               
     },
     {
-        name: "Martinez",
+        title: "Martinez",
         ingredients: [
             "2 oz. Old Tom Gin",
             "1 oz. Italian Rosso Vermouth",
@@ -531,7 +531,7 @@ const drinkSeed = [
         category: "gin"               
     },
     {
-        name: "Mimosa",
+        title: "Mimosa",
         ingredients: [
             "1⁄2 Champagne",
             "1⁄2 Orange Juice"
@@ -542,7 +542,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        name: "Mint Julep",
+        title: "Mint Julep",
         ingredients: [
             "2.25 oz. Bourbon",
             "<.5 oz. Demerara Syrup (1:1)",
@@ -554,7 +554,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "Mojito",
+        title: "Mojito",
         ingredients: [
             "2 oz. White Rum",
             "<1 oz. Fresh Lime",
@@ -568,7 +568,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        name: "Moscow Mule (and ALL Mules)",
+        title: "Moscow Mule (and ALL Mules)",
         ingredients: [
             "2 oz. Vodka (or other base)",
             "<1 oz. Fresh Lime",
@@ -581,7 +581,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "Negroni",
+        title: "Negroni",
         ingredients: [
             "1.5 oz. London Dry Gin",
             "1 oz. Italian Rosso Vermouth",
@@ -593,7 +593,7 @@ const drinkSeed = [
         category: "gin"               
     },
     {
-        name: "Old Cuban",
+        title: "Old Cuban",
         ingredients: [
             "2 oz. Aged Rum",
             ".5 oz. Demerara Syrup (1:1)",
@@ -607,7 +607,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        name: "Old Fashioned",
+        title: "Old Fashioned",
         ingredients: [
             "2.5 oz. Bourbon OR Rye",
             "<.5 oz. Demerara Syrup (1:1)",
@@ -620,7 +620,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "Old Maid aka London Maid",
+        title: "Old Maid aka London Maid",
         ingredients: [
             "2 oz. London Dry Gin",
             ".75 oz. Fresh Lemon",
@@ -634,7 +634,7 @@ const drinkSeed = [
         category: "gin"               
     },
     {
-        name: "Paloma",
+        title: "Paloma",
         ingredients: [
             "1.5 oz. Blanco Tequila",
             ".5 oz. Mezcal",
@@ -648,7 +648,7 @@ const drinkSeed = [
         category: "misc"               
     },
     {
-        name: "Wise Guy",
+        title: "Wise Guy",
         ingredients: [
             "4 sage leaves, plus 1 sprig for garnish",
             ".25 oz. Jalapeno Agave Syrup",
@@ -664,7 +664,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        name: "Tuscan Fresco",
+        title: "Tuscan Fresco",
         ingredients: [
             "2 rosemary sprigs",
             "1 oz. peach nectar",
@@ -679,7 +679,7 @@ const drinkSeed = [
         category: "non-alcoholic"      
     },
     {
-        name: "Fuji Apple Soda",
+        title: "Fuji Apple Soda",
         ingredients: [
             "2 oz. Apple-Ginger Syrup",
             "3 oz. chilled club soda",
@@ -692,7 +692,7 @@ const drinkSeed = [
 
     },
     {
-        name: "Strawberrry & Ginger Cooler",
+        title: "Strawberrry & Ginger Cooler",
         ingredients: [
             "2 large Strawberries, sliced, plus 1 Strawberry half",
             "1/2-inch piece of fresh ginger, chopped",
@@ -707,7 +707,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        name: "Lilikoi",
+        title: "Lilikoi",
         ingredients: [
             "2 oz. Mango-Lilikoi Puree",
             "1 oz. Passion fruit nectar or juice",
@@ -722,7 +722,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        name: "Rocking Orange",
+        title: "Rocking Orange",
         ingredients: [
             "2 oz. Fresh Orange Juice",
             "2 oz. Fresh Mandarin Orange juice",
@@ -737,7 +737,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        name: "Raspberry Fizz",
+        title: "Raspberry Fizz",
         ingredients: [
             "8 Raspberries, plus 3 Rasberries skewered on a pick for garnish",
             "1 oz. Fresh Lemon juice",
@@ -752,7 +752,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        name: "Lady Lavender's Mocktail",
+        title: "Lady Lavender's Mocktail",
         ingredients: [
             "3 oz. Fresh Grapefruit juice",
             ".75 oz. Lavender Syrup",
@@ -767,7 +767,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        name: "Sophisticated Lady",
+        title: "Sophisticated Lady",
         ingredients: [
             "1 unpeeled cucumber wheel, plus 1 peeled cucumber spear",
             "1 oz. Simple Syrup",
@@ -777,6 +777,91 @@ const drinkSeed = [
         ],
         directions: "In a cocktail shaker, muddle the cucumber wheel, Simple syrup and salt. Add the ice and the juices and shake well. Double strain into a chilled Martini glass. Garnish with the spear.",
         image: "./images/SophisticatedLady.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        title: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        title: "The Lamborn",
+        ingredients: [
+            "2 oz. Mount Gay Silver rum",
+            "2 oz. snap pea juice",
+            "1 oz. Lime juice",
+            ".5 oz. jasmine syrup",                     
+        ],
+        directions: "Shake with ice and strain into a highball glass over fresh ice. Garnish with pea shoots and flower.",
+        image: "./images/TheLamborn.jpg",
+        favorite: "no",
+        category: "rum"               
+    },
+    {
+        title: "Walking Far From Home",
+        ingredients: [
+            "2 oz. Plantation White Rum",
+            "1.5 oz. red currant puree",
+            ".25 oz. Fresh lime juice",
+            ".25 oz. maple syrup(1:1)",
+            "1 pinch of Raw Earl Grey Tea",
+            "1 dehydrated lime wheel (for garnish)"                    
+        ],
+        directions: "In cocktail shaker, combine all ingredients with ice and shake hard for 25 seconds. Double strain over fresh ice into a double rocks glass and garnish with the dehydrated lime wheel.",
+        image: "./images/WalkingFarFromHome.jpg",
+        favorite: "no",
+        category: "rum"               
+    },
+    {
+        name: "Summer Moon",
+        ingredients: [
+            "2 oz. Barcardi Silver rum",
+            "1 oz. fresh Lime juice",
+            "1 oz. house made hibiscus and dandelion root syrup",
+            "1 oz. blood orange juice",
+            "2 dashes of Fee Bros. Grapefruit Bitters",
+            "4 muddled mint leaves"                    
+        ],
+        directions: "Muddle mint in a mixing tin. Adding remaining indgredients into mixing tin with ice. Shake and double strain over ice. Top with crushed ice halfmoon and drizzle hibiscus and dandelion root syrup over.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "rum"               
+    },
+    {
+        name: "Old Glory",
+        ingredients: [
+            "8-10 blueberries",
+            "2 oz. Long Island Vodka",
+            "1 oz. Fresh Lemon juice",
+            "1 oz. simple syrup",
+            "1-2 oz. Oregon Pinot Noir"                 
+        ],
+        directions: "Muddle fresh blueberries at the bottom of a double old fashioned glass and top with ice. Add vodka, lemon, and simple syrup to a mixing glass and shake vigorously until chilled and combined. Strain over ice and blueberries. Carefully pour wine over a spoon into the cocktail to create a red wine 'float'.",
+        image: "./images/OldeGlory.jpg",
+        favorite: "no",
+        category: "vodka"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
         favorite: "no",
         category: "non-alcoholic"               
     },
@@ -794,6 +879,147 @@ const drinkSeed = [
         favorite: "no",
         category: "non-alcoholic"               
     },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+    {
+        name: "Almond-Fennel Cooler",
+        ingredients: [
+            ".75 oz. Orgeat (almond-flavored syrup)",
+            ".75 oz. Fennel Syrup",
+            ".5 oz. Fresh Lemon juice",
+            "6 oz. Chilled club soda",
+            "1 Fennel frond, for garnish (optional)"                    
+        ],
+        directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
+        image: "./images/Almond-FennelCooler.jpg",
+        favorite: "no",
+        category: "non-alcoholic"               
+    },
+
      
 ]
 

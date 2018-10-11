@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import API from "../utils/api"
 
 
 class SearchBar extends Component {
@@ -8,13 +9,42 @@ class SearchBar extends Component {
         super(props);
 
         this.state = {
-            term: ''
+            term: '',
+            drinkName: "",
+            drink: {}
         }
     }
 
+    handleInputChange = (event) => {
+
+        const { value } = event.target;
+        this.setState({
+          term: value
+        }, () => {
+            console.log(this.state.term)
+              API.getDrinkName(this.state.term)
+                .then(response => {
+                    console.log(response)
+                    this.setState({drink: response})
+                })
+            
+        })
+      }
+
+      navigateToDetailPage = () => {
+          window.location.pathname = "detail/" + this.state.drink._id;
+      }
+
+
+
     render() {
+<<<<<<< HEAD
         return (
         <div className='app-header jumbotron'>
+=======
+        return ( 
+        <div className='app-header'>
+>>>>>>> master
         
             <h1 id='title'>AwesomePour</h1>
             <Link
@@ -22,16 +52,21 @@ class SearchBar extends Component {
                 className={
                 window.location.pathname === "/create" ? "nav-link active" : "nav-link"
                 }
-                class="linkBtn"
+                className="linkBtn"
                 >
                 <button>Create your own Drink</button>
                 
             </Link>
 
+            <br></br>
+            <br></br>
+
             <input 
             value = {this.state.term}
-            onChange = {event => this.setState({term: event.target.value})} 
+            onChange={this.handleInputChange} 
             />
+            
+            <button onClick={this.navigateToDetailPage}>Search By Name</button>
         </div>
         );
     }

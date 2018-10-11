@@ -19,7 +19,8 @@ const drinkSeed = [
         ],
         directions: "shake, strain, top with champagne & lime wheel",
         image: "./images/airmail.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "rum"
     },
     {
         name: "Amaretto Sour",
@@ -32,7 +33,8 @@ const drinkSeed = [
         ],
         directions: "dry shake, shake with ice, fine strain, ice cubes, lemon twist, cherry",
         image: "./images/amaretto-sour.jpg",
-        favorite: "yes"
+        favorite: "yes",
+        category: "bourbon"
     },
     {
         name: "American Highball",
@@ -42,7 +44,8 @@ const drinkSeed = [
         ],
         directions: "build in a colins glass with ice, Top with club soda, an orange twist, and a half wheel of an orange",
         image: "./images/highball.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "whiskey"
     },
     {
         name: "Aperol Spritz",
@@ -53,7 +56,8 @@ const drinkSeed = [
         ],
         directions: "Build in a white wine glass filled with cracked ice. Stir gently to combine. Garnish with a half wheel of orange",
         image: "./images/aperol-spritz.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "champagne"
     },
     {
         name: "Arsenic and old lace",
@@ -64,7 +68,8 @@ const drinkSeed = [
         ],
         directions: "Stri, strain over an absinthe rinsed cup. Garnish with an orange twist.",
         image: "./images/arsenic-and-old-lace.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Aviation",
@@ -76,7 +81,8 @@ const drinkSeed = [
         ],
         directions: "Shave, strain over a creme de violette rinsed cup with brandied cherry in a glass.",
         image: "./images/aviation.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Bee's Knees",
@@ -87,7 +93,8 @@ const drinkSeed = [
         ],
         directions: "Shanke and strain. Garnish with a lemon wheel.",
         image: "./images/bees-knees.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Bellini",
@@ -97,7 +104,8 @@ const drinkSeed = [
         ],
         directions: "Top with Champagne",
         image: "./images/bellini.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "champagne"
     }, 
     {
         name: "Bijou",
@@ -109,7 +117,8 @@ const drinkSeed = [
         ],
         directions: "Stir and strain. Garnish with a lemon twist",
         image: "./images/bijou.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Black Russian",
@@ -119,7 +128,8 @@ const drinkSeed = [
         ],
         directions: "Stir, serve over rocks",
         image: "./images/black-russian.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "vodka"
     },
     {
         name: "Bloody Mary",
@@ -134,7 +144,8 @@ const drinkSeed = [
         ],
         directions: "Roll between tins with ice until chilled. Strain into a collons glass over ice. Garnish with olives ona skewer, a lemon wedge and a celery stick.",
         image: "./images/bloody-mary.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "vodka"
     },
     {
         name: "Boulevardier",
@@ -145,7 +156,8 @@ const drinkSeed = [
         ],
         directions: "Short stir and pour over rocks. Garnish with an orange twist.",
         image: "./images/boulevardier.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "bourbon"
     },
     {
         name: "Bramble",
@@ -156,7 +168,8 @@ const drinkSeed = [
         ],
         directions: "Gently crush 5 blackberries in bottom of a large rocks glass and add crushed ice on top. Shake and Strain into a prepped glass. Top with crushed ice and float .5oz of Creme de Mure. Garnish with a lemon wheel.",
         image: "./images/bramble.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Brandy Alexander",
@@ -167,7 +180,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain. Garnish with Nutmeg.",
         image: "./images/brandy-alexander.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "misc"
     },
     {
         name: "Brooklynite",
@@ -179,7 +193,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain. Garnish with a lime wheel.",
         image: "./images/brooklynite.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "rum"
     }, 
     {
         name: "Caipirina",
@@ -191,7 +206,8 @@ const drinkSeed = [
         ],
         directions: "Muddle then fill the tin with ice. Shake and dump. Serve with a straw.",
         image: "./images/caipirina.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "rum"
     },
     {
         name: "Champagne Cocktail",
@@ -201,7 +217,8 @@ const drinkSeed = [
         ],
         directions: "place sugar cube in a cup with bitters. Top with chilled champagne. Garnish with a spiraled lemon twist.",
         image: "./images/champagne-cocktail.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "champagne"
     },
     {
         name: "Chartreuse Swizzle",
@@ -213,7 +230,8 @@ const drinkSeed = [
         ],
         directions: "Build in a collins glass with crushed ice. Swizzle then add more crushed ice to just below the top of the glass. Hevily dash a layer of Angostura bitters. Agitate the bitters with a bar spoon to form a consistent layer. Top with fresh crushed ice up, over the rim of the glass. Garnish with grated nutmeg, mint sprig and a straw.",
         image: "./images/chartreuse-swizzle.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "misc"
     },
     {
         name: "Chrysanthemum",
@@ -224,7 +242,8 @@ const drinkSeed = [
         ],
         directions: "Short stir and strain over rocks. Garnish with an orange twist.",
         image: "./images/chrysanthemum.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "misc"
     },
     {
         name: "Clover Club",
@@ -238,7 +257,8 @@ const drinkSeed = [
         ],
         directions: "Muddle the raspberries and shake. Then shake with ice and strain. Garnish with skewered raspberries and a lemon twist.",
         image: "./images/clover-club.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Corn 'n Oil",
@@ -250,7 +270,8 @@ const drinkSeed = [
         ],
         directions: "Muddle the lime. Hard shake with ice and dump into a double rocks glass.",
         image: "./images/corn-oil.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "rum"
     },
     {
         name: "Daiquiri",
@@ -261,7 +282,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain.",
         image: "./images/daiquiri.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "rum"
     },
     {
         name: "Eastside",
@@ -274,7 +296,8 @@ const drinkSeed = [
         ],
         directions: "Shake with 3 ice cubes. Strain into a large rocks glass with crushed ice. Garnish with a mint sprig and a cucumber slice.",
         image: "./images/eastside.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "French 75",
@@ -285,7 +308,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain into a cup or champagne glass. Top wit champagne. Garnish with a lemon twist.",
         image: "./images/french-75.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     }, 
     {
         name: "Gimlet",
@@ -297,7 +321,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain over a rocks glass. Garnish with lime twists.",
         image: "./images/gimlet.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Gin Rickey",
@@ -308,7 +333,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain into a collins glass over ice. Add 1oz. club soda, and Garnish with a lime wedge.",
         image: "./images/gin-rickey.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Godfather/Godmother",
@@ -318,7 +344,8 @@ const drinkSeed = [
         ],
         directions: "Stir in a rocks glass. If you are making a Godmother, substitute Vodka for the Scotch.",
         image: "./images/godfather.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "misc"
     },
     {
         name: "Grasshopper",
@@ -330,7 +357,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain. Garnish with a mint leaf.",
         image: "./images/Grasshopper.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "misc"
     },
     {
         name: "Hanky Panky",
@@ -341,7 +369,8 @@ const drinkSeed = [
         ],
         directions: "Stir and strain. Garnish with a lemon twist.",
         image: "./images/hanky-panky.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "gin"
     },
     {
         name: "Hemmingway Daiquiri",
@@ -355,7 +384,8 @@ const drinkSeed = [
         ],
         directions: "Shake and strain. Garnish with a lime wheel.",
         image: "./images/hemmingway-daiquiri.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "rum"
     },
     {
         name: "Hot Toddy",
@@ -368,7 +398,8 @@ const drinkSeed = [
         ],
         directions: "Heat cocktail with espresso wand/Pour into warm coffee cup/Garnish with cinnamon stick and clove-studded lemon wedge.",
         image: "./images/HotToddy.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "bourbon"
     },
     {
         name: "Irish Coffee",
@@ -380,7 +411,8 @@ const drinkSeed = [
         ],
         directions: "Heat with espresso wand/Pour into hot cocktail cup/Top with hand-whipped heavy cream/Grated cinnamon.",
         image: "./images/IrishCoffee.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "whiskey"
     },
     {
         name: "Japanese Cocktail",
@@ -390,8 +422,9 @@ const drinkSeed = [
             "3 dashes Angostura Bitters"                  
         ],
         directions: "Stir/Strain/Nick & Nora/Lemon twist expressed and discarded.",
-        image: "./images/JapeneseCocktail.jpg",
-        favorite: "no"
+        image: "./images/JapaneseCocktail.jpg",
+        favorite: "no",
+        category: "misc"
     },
     {
         name: "Kir",
@@ -401,7 +434,8 @@ const drinkSeed = [
         ],
         directions: "Fill white wine glass full of cracked ice/Quick stir to combine/Lemon twist/Straw.",
         image: "./images/Kir.jpg",
-        favorite: "no"
+        favorite: "no",
+        category: "misc"
     },
     {
         name: "Kir Royale",
@@ -411,7 +445,8 @@ const drinkSeed = [
         ],
         directions: "Serve in a coupe or Champagne flute/Garnish with a fresh raspberry/Lemon twist expressed and discarded.",
         image: "./images/KirRoyale.jpg",
-        favorite: "no"        
+        favorite: "no",
+        category: "champagne"        
     },
     {
         name: "Last Word",
@@ -423,7 +458,8 @@ const drinkSeed = [
         ],
         directions: "Shake/Fine strain.Serve in a Nick & Nora glass.",
         image: "./images/LastWord.jpg",
-        favorite: "no"       
+        favorite: "no",
+        category: "gin"       
     },
     {
         name: "Long Island Iced Tea",
@@ -437,7 +473,8 @@ const drinkSeed = [
         ],
         directions: "Shake/Strain/Collins/Ice/Top with Coca Cola/Lemon wedge.",
         image: "./images/LongIslandIceTea.jpg",
-        favorite: "no"       
+        favorite: "no",
+        category: "vodka"       
     },
     {
         name: "Mai Tai",
@@ -451,7 +488,8 @@ const drinkSeed = [
         ],
         directions: "Shake with 3 ice cubes/Strain/Large rocks glass/Crushed ice/Orange half wheel fan and lime wheel/Straw.",
         image: "./images/MaiTai.jpg",
-        favorite: "no"       
+        favorite: "no",
+        category: "rum"       
     },
     {
         name: "Manhattan",
@@ -462,7 +500,8 @@ const drinkSeed = [
         ],
         directions: "Stir/Strain/Brandied cherries on cocktail pick.",
         image: "./images/Manhattan.jpg",
-        favorite: "no"       
+        favorite: "no",
+        category: "bourbon"       
     },
     {
         name: "Margarita",
@@ -474,7 +513,8 @@ const drinkSeed = [
         ],
         directions: "Shake/Fine strain/Top with a Lime wedge.",
         image: "./images/Margarita.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "misc"               
     },
     {
         name: "Martinez",
@@ -487,7 +527,8 @@ const drinkSeed = [
         ],
         directions: "Stir/Strain/Coupe/Garnish with a Lemon twist.",
         image: "./images/Martinez.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "gin"               
     },
     {
         name: "Mimosa",
@@ -497,7 +538,8 @@ const drinkSeed = [
         ],
         directions: "Carefully poured into a flute.",
         image: "./images/Mimosa.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "champagne"               
     },
     {
         name: "Mint Julep",
@@ -508,7 +550,8 @@ const drinkSeed = [
         ],
         directions: "Crush mint in hand/Whip all ingredients with 3 pieces ice/Strain/Julep cup/Crushed ice/Mint sprigs.",
         image: "./images/MintJulep.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "bourbon"               
     },
     {
         name: "Mojito",
@@ -521,7 +564,8 @@ const drinkSeed = [
         ],
         directions: "Gentle Muddle/Whip shake with 2 ice cubes/Dump everythingvinto chilled Collins glass/Top with crushed ice/.5 oz Club soda/Garnish with lime wheel and mint sprig/Straw.",
         image: "./images/Mojito.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "rum"               
     },
     {
         name: "Moscow Mule (and ALL Mules)",
@@ -533,7 +577,8 @@ const drinkSeed = [
         ],
         directions: "Shake with 3 ice cubes/Strain into Collins glass with ice/Top with club soda/3 dashes of Angostura Bitters/Lime wedge/Straw.",
         image: "./images/MoscowMule.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "vodka"               
     },
     {
         name: "Negroni",
@@ -544,7 +589,8 @@ const drinkSeed = [
         ],
         directions: "Short stir/Rock/Orange twist.",
         image: "./images/Negroni.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "gin"               
     },
     {
         name: "Old Cuban",
@@ -557,7 +603,8 @@ const drinkSeed = [
         ],
         directions: "Shake with 3 ice cubes/Fine strain/Coupe/Champagne/Mint leaf.",
         image: "./images/OldCuban.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "rum"               
     },
     {
         name: "Old Fashioned",
@@ -569,7 +616,8 @@ const drinkSeed = [
         ],
         directions: "Short stir/Large rock/Lemon and Orange twists.",
         image: "./images/OldFashioned.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "bourbon"               
     },
     {
         name: "Old Maid aka London Maid",
@@ -582,7 +630,8 @@ const drinkSeed = [
         ],
         directions: "Whip shake with 3 ice cubes/Fine strain/Large rocks glass with cracked ice/Mint sprig/Cucumber slice/Straw.",
         image: "./images/OldMaid.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "gin"               
     },
     {
         name: "Paloma",
@@ -595,7 +644,8 @@ const drinkSeed = [
         ],
         directions: "Shake/Strain/Salt-rimmed Collins filled with ice/Straw/Lime wedge",
         image: "./images/Paloma.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "misc"               
     },
     {
         name: "Wise Guy",
@@ -610,7 +660,8 @@ const drinkSeed = [
         ],
         directions: "Muddle the leaves in a cocktail shaker with the Jalapeno Agave Syrup. Add the pineapple juice, verjus, lime juice and salt. Fill the shaker with ice cubes and shake well. Fine-strain into a chilled, crushed ice filled julep cup and garnish with sage sprig and Aleppo pepper.",
         image: "./images/WiseGuy.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
     {
         name: "Tuscan Fresco",
@@ -624,7 +675,8 @@ const drinkSeed = [
         ],
         directions: "Fill a cocktail shaker with ice. Add 1 sprig of Rosemary and the peach nectar, white cranberry juice, lemon juice, and Simple Syrup. Shake well and strain into an ice-filled rocks glass. Stir in the club soda and garnish with the remaining Rosemary sprig.",
         image: "./images/TuscanFresco.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"      
     },
     {
         name: "Fuji Apple Soda",
@@ -635,7 +687,8 @@ const drinkSeed = [
         ],
         directions: "Fill a highball glass with ice. Add the Apple-Ginger Syrup and soda; stir. Garnish with the apple slices.",
         image: "./images/FujiAppleSoda.jpg",
-        favorite: "no" 
+        favorite: "no",
+        category: "non-alcoholic" 
 
     },
     {
@@ -650,7 +703,8 @@ const drinkSeed = [
         ],
         directions: "In a cocktail shaker, muddle the strawberry slices with the ginger and simple syrup. Add ice and the orange and lime juices and shake well. Double strain into an ice-filled collins glass. Stir in the ginger beer and garnish with the strawberry half.",
         image: "./images/StrawberryGingerCooler.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
     {
         name: "Lilikoi",
@@ -664,7 +718,8 @@ const drinkSeed = [
         ],
         directions: "Fill a cocktail shaker with ice. Add all of the remaining ingredients except the orchid and shake well. Strain into a chilled red wine glass or hurrican glass and garnish with orchid.",
         image: "./images/Lilikoi.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
     {
         name: "Rocking Orange",
@@ -678,7 +733,8 @@ const drinkSeed = [
         ],
         directions: "Fill a cocktail shaker with ice. Add all of the remaining ingredients except the club soda and garnishes and shake well. Strain into an ice-filled highball glass, then stir in the club soda. Garnish with the orange zest strips and the twist.",
         image: "./images/RockingOrange.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
     {
         name: "Raspberry Fizz",
@@ -692,7 +748,8 @@ const drinkSeed = [
         ],
         directions: "In a cocktail shaker, muddle the 8 raspberries. Add ice and the lemon juice, rose water and Simple Syrup and shake well. Strain into an ice-filled highball glass. Stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
         image: "./images/RaspberryFizz.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
     {
         name: "Lady Lavender's Mocktail",
@@ -706,7 +763,8 @@ const drinkSeed = [
         ],
         directions: "Fill a cocktail shaker with ice. Add the grapefruit juice, Lavender Syrup and grenadine and shake well. Strain into an ice-filled collins glass, stir in the club soda and garnish with the basil and lavender sprigs.",
         image: "./images/LadyLavenderMocktail.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
     {
         name: "Sophisticated Lady",
@@ -719,7 +777,8 @@ const drinkSeed = [
         ],
         directions: "In a cocktail shaker, muddle the cucumber wheel, Simple syrup and salt. Add the ice and the juices and shake well. Double strain into a chilled Martini glass. Garnish with the spear.",
         image: "./images/SophisticatedLady.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
     {
         name: "Almond-Fennel Cooler",
@@ -732,7 +791,8 @@ const drinkSeed = [
         ],
         directions: "In a collins glass, combine the orgeat, Fennel Syrup and fresh lemon juice and stir well. Add ice, stir in the chilled club soda and garnish with the fennel fron.",
         image: "./images/Almond-FennelCooler.jpg",
-        favorite: "no"               
+        favorite: "no",
+        category: "non-alcoholic"               
     },
      
 ]

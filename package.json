@@ -26,9 +26,8 @@
     "express": "^4.15.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.0",
-    "react-bootstrap": "^0.32.4",
-    "react-materialize": "^2.4.6",
+    "react-slick": "^0.23.1",
     "react-router-dom": "^4.3.1",
-    "react-slick": "^0.23.1"
+    "reactstrap": "^6.5.0"
   }
 }

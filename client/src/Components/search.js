@@ -38,13 +38,8 @@ class SearchBar extends Component {
 
 
     render() {
-<<<<<<< HEAD
-        return (
-        <div className='app-header jumbotron'>
-=======
         return ( 
         <div className='app-header'>
->>>>>>> master
         
             <h1 id='title'>AwesomePour</h1>
             <Link

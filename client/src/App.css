@@ -83,29 +83,6 @@
   border: solid white 1px;
 }
 
-
-
-.slide {
-  height: 300px;
-  width: 300px;
-  float: left;
-}
-
-.arrow:hover{
-  border:3px white solid;
-  font-size:2em;
-}
-
-.arrow{
-  color: orange;
-}
-.carousel{
-  height: 300px;
-  width: 500px;
-  border: solid 1px blue;
-}
-.carousel-wrapper {
-  height: 300px;
-  width: 300px;
-  float: left;
+.caro_image{
+  widows: 200px;
 }

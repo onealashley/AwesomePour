@@ -10,8 +10,7 @@ import Bourbon from "../Components/bourbon"
 import Champagne from "../Components/champagne"
 import Misc from "../Components/misc"
 import Nonalcoholic from "../Components/nonalcoholic"
-
-
+import DemoCarousel from '../Components/Slider'
 
 
 class Drinks extends Component {
@@ -36,7 +35,6 @@ class Drinks extends Component {
 
 
     render() {
-        console.log(this.ref)
         return (
             <div className='container'>
 
@@ -44,6 +42,8 @@ class Drinks extends Component {
                         <Favorites />
                     </div>
                     <p>-----------------------------------------------------------------</p> 
+
+                    <DemoCarousel />
                     
                     <Gin />
                     <Rum />

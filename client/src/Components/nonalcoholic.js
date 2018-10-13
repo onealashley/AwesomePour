@@ -33,7 +33,7 @@ class Nonalcoholic extends Component {
                    
                    <Link to={"/detail/" + nonalcoholic._id}>   
                         <img src = {nonalcoholic.image} ></img>
-                        <span>{nonalcoholic.name}</span>
+                        <span>{nonalcoholic.title}</span>
                     </Link>
                </div>
                 ))}

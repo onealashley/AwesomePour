@@ -33,7 +33,7 @@ class Vodka extends Component {
                    
                    <Link to={"/detail/" + vodka._id}>   
                         <img src = {vodka.image} ></img>
-                        <span>{vodka.name}</span>
+                        <span>{vodka.title}</span>
                     </Link>
                </div>
                 ))}

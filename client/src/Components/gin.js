@@ -39,8 +39,26 @@ class Gin extends Component {
     
                 </Carousel>
                 </div>
+<<<<<<< HEAD
             );
         }
+=======
+
+                {this.state.ginDrinks.map(ginDrink => (
+                
+
+                <div className='drink_image'>
+                   
+                   <Link to={"/detail/" + ginDrink._id}>   
+                        <img src = {ginDrink.image} ></img>
+                        <span>{ginDrink.title}</span>
+                    </Link>
+               </div>
+                ))}
+            </div>
+        )
+    }
+>>>>>>> master
 
 }
 

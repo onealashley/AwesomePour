@@ -27,11 +27,21 @@ class Bourbon extends Component {
                 {this.state.bourbonDrinks.map((drink,index) => (
                 
 
+<<<<<<< HEAD
                        <div key={index}>
                          <img src={drink.image} style={{height:'600px'}}/>
                          <p className="legend">{drink.name}</p>
 
                        </div>
+=======
+                <div className='drink_image'>
+                   
+                   <Link to={"/detail/" + bourbon._id}>   
+                        <img src = {bourbon.image} ></img>
+                        <span>{bourbon.title}</span>
+                    </Link>
+               </div>
+>>>>>>> master
                 ))}
 
             </Carousel>

@@ -2,12 +2,13 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const drinkSchema = new Schema({
-  name: { type: String, required: true },
+  title: { type: String },
   ingredients: [],
-  directions: { type: String, required: true },
-  image: String,
-  favorite: { type: String, default: "yes" },
-  category: String
+  directions: { type: String },
+  image: { type: String, default: "./images/default-img.jpg"},
+  category: String,
+  favorite: { type: String, default: "yes" }
+  
 });
 
 const Drink = mongoose.model("Drink", drinkSchema);

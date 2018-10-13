@@ -6,6 +6,8 @@ import Drinks from './pages/Drinks';
 import Create from './pages/Create';
 import Detail from './pages/Detail'
 import SearchBar from './Components/search'
+import Modals from './Components/modal'
+
 
 
 class App extends Component {
@@ -17,6 +19,8 @@ class App extends Component {
         <div className="App">
           <div>
           <SearchBar />
+          <br></br>
+          <Modals />
           <Route exact path="/" component={Drinks} />
           <Route exact path="/create" component={Create} />
           <Route exact path="/detail/:id" component={Detail} />

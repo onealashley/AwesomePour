@@ -40,7 +40,7 @@ class Favorites extends Component {
                 <div className='drink_image'>
                 <Link to={"/detail/" + favDrink._id}>   
                         <img src = {favDrink.image} ></img>
-                        <span>{favDrink.title}</span>
+                        <p>{favDrink.title}</p>
                     </Link>
                </div>
                 ))}

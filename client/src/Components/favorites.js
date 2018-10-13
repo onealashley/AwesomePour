@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import API from '../utils/api';
-import { Link } from "react-router-dom"
-import DeleteBtn from "./DeleteBtn"
+import { Link } from "react-router-dom";
+import DeleteBtn from "./DeleteBtn";
+import favbtn from "./FavButton";
+import FavBtn from "./FavButton";
 
 class Favorites extends Component {
     state = {
@@ -14,11 +16,23 @@ class Favorites extends Component {
         
     };
 
+    loadDrinks = () => {
+        API.getDrinks()
+            .then (res => this.setState({ drinks: res.data }))
+            .catch(err => console.log(err));
+    };
+
     deleteDrink = id => {
         API.deleteDrink(id)
-          .then(res => this.loadBooks())
+          .then(res => this.favDrinks(), window.location.reload())
           .catch(err => console.log(err));
-      };
+    };
+
+    updateFavDrinkOff = id => {
+        API.updateFavDrinkOff(id)
+            .then(window.location.reload())
+            .catch(err => console.log(err));
+    }
     
 
     favDrinks = () => {
@@ -26,6 +40,7 @@ class Favorites extends Component {
             .then (res => this.setState({ favDrinks: res.data }))
             .catch(err => console.log(err));
     };
+
 
     render() {
         return (
@@ -38,10 +53,11 @@ class Favorites extends Component {
                 
 
                 <div className='drink_image'>
-                <Link to={"/detail/" + favDrink._id}>   
+                    <Link to={"/detail/" + favDrink._id}>   
                         <img src = {favDrink.image} ></img>
                         <span>{favDrink.title}</span>
                     </Link>
+                    <DeleteBtn onClick={() => this.updateFavDrinkOff(favDrink._id)} />
                </div>
                 ))}
             </div>

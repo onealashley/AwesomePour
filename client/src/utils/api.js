@@ -10,6 +10,15 @@ export default {
       return axios.get("/api/favorites")
     },
 
+    updateFavDrink: function(id) {
+      console.log(id)
+      return axios.put("api/drinks/" + id).then(response => console.log("update"))
+    },
+
+    updateFavDrinkOff: function(id) {
+      return axios.put("api/favorites/" + id)
+    },
+
     ginDrinks: function() {
       return axios.get("/api/gin")
     },

@@ -84,7 +84,7 @@
   right: auto;
   background-color: lightslategrey;
   border-radius: 5px;
-  height: 400px;
+  height: 450px;
   
 }
 
@@ -96,4 +96,9 @@
   bottom: 0;
   background: rgb(29, 26, 26, .7)
   
+}
+
+select {
+  width: 80%;
+  height: 35px;
 }

@@ -64,10 +64,11 @@ class Modals extends Component {
                 .then(res => this.loadDrinks())
                 .catch(err => console.log(err));
     };
+    
 
     render() {
         return (
-            <div>
+            <div id="modalDiv">
                 <button onClick={this.openModal}>Create A Custom Drink</button>
                 <Modal
                     isOpen={this.state.modalIsOpen}
@@ -78,8 +79,6 @@ class Modals extends Component {
                     contentLabel="Example Modal"
                 >
                     <h2 >Create Your Own Drink</h2>
-                    {/* <button onClick={this.closeModal}>close</button> */}
-                    
                     <form>
                         <Input
                             value={this.state.title}
@@ -97,6 +96,18 @@ class Modals extends Component {
                             name="category"
                             placeholder="Category of the drink"
                         />
+                        
+                        {/* <select value={this.state.category} onChange={this.handleInputChange}>
+                        <option value="rum">Rum</option>
+                        <option value="bourbon">Vodka</option>
+                        <option value="vodka">Vodka</option>
+                        <option value="gin">Gin</option>
+                        <option value="champagne">Champagne</option>
+                        <option value="nonalcoholic">Non-Alcoholic</option>
+                        <option value="misc">Miscellaneous</option>
+                        </select> */}
+
+                        <br></br>
                         <br></br>
 
                         <Input
@@ -124,6 +135,8 @@ class Modals extends Component {
                             Submit drink
                         </FormBtn>
                     </form>
+                    <br></br>
+                    <button onClick={this.closeModal}>close</button>
                 </Modal>
             </div>
         );

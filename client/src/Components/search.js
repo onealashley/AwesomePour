@@ -40,18 +40,7 @@ class SearchBar extends Component {
         return ( 
         <div className='app-header'>
         
-            <h2>AwesomePour</h2>
-            {/* <Link
-                
-                to="/create"
-                className={
-                window.location.pathname === "/create" ? "nav-link active" : "nav-link"
-                }
-                className="linkBtn"
-                >
-                <button>Create your own Drink</button>
-                
-            </Link> */}
+            <h2>AwesomePour</h2> 
 
             <br></br>
             <br></br>

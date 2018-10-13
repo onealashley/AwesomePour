@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import API from '../utils/api';
 import { Link } from "react-router-dom";
-import { Carousel } from 'react-responsive-carousel';
-
 
 class Bourbon extends Component {
     state = {
@@ -23,29 +21,24 @@ class Bourbon extends Component {
 
     render() {
         return (
-            <Carousel axis='horizontal' showThumbs={false}>
-                {this.state.bourbonDrinks.map((drink,index) => (
+            <div>
+                <div>
+                    <p className="favLabel">Bourbon Drinks</p>
+                </div>
+
+                {this.state.bourbonDrinks.map(bourbon => (
                 
 
-<<<<<<< HEAD
-                       <div key={index}>
-                         <img src={drink.image} style={{height:'600px'}}/>
-                         <p className="legend">{drink.name}</p>
-
-                       </div>
-=======
                 <div className='drink_image'>
                    
                    <Link to={"/detail/" + bourbon._id}>   
                         <img src = {bourbon.image} ></img>
-                        <span>{bourbon.title}</span>
+                        <span>{bourbon.name}</span>
                     </Link>
                </div>
->>>>>>> master
                 ))}
-
-            </Carousel>
-        );
+            </div>
+        )
     }
 
 }

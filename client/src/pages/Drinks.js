@@ -44,8 +44,10 @@ class Drinks extends Component {
                     <p>-----------------------------------------------------------------</p> 
 
                     <DemoCarousel />
+                    <div className='row'>
+                        <Gin />
+                    </div>
                     
-                    <Gin />
                     <Rum />
                     <Vodka />
                     <Bourbon />

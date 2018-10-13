@@ -26,12 +26,9 @@
     "express": "^4.15.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.0",
-<<<<<<< HEAD
     "noble": "^1.9.1",
-    "react-router-dom": "^4.3.1"
-=======
+    "react-bootstrap": "^0.32.4",
     "react-router-dom": "^4.3.1",
     "reactstrap": "^6.5.0"
->>>>>>> a4f023f09ac0355ae3d0462063eb136a39130d29
   }
 }

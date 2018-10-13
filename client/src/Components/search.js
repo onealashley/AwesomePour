@@ -12,6 +12,8 @@ class SearchBar extends Component {
             term: '',
             drinkName: "",
             drink: {},
+            zero: 268371,
+            weightReading: 0,
             weight:" Not Connected"
         }
     }
@@ -41,7 +43,6 @@ class SearchBar extends Component {
     render() {
         return ( 
         <div className='app-header'>
-            <h3>Scale Weight: {this.state.weight}</h3>
             <h2>AwesomePour</h2>
             <Link
 
@@ -63,16 +64,16 @@ class SearchBar extends Component {
             onChange={this.handleInputChange} 
             />
 
-            <button onClick={this.connect
-                } > Connect to Scale</button>
-            
+           
             <button onClick={this.navigateToDetailPage}>Search By Name</button>
         </div>
         );
     }
 
 
-
+    zero=()=>{
+        this.setState({zero: this.state.weightReading});
+    }
 
 
 
@@ -112,7 +113,10 @@ handleNotifications=(event)=> {
     let weightReading=new Uint32Array(event.target.value.buffer)[0];
     window.event=event;
     console.log(weightReading);
-    this.setState({weight: weightReading});
+    this.setState({weightReading: weightReading});
+    let weightValue=(weightReading-this.state.zero)/27341;
+
+    this.setState({weight: weightValue.toFixed(2)});
     
 }
 

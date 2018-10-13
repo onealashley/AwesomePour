@@ -833,7 +833,7 @@ const drinkSeed = [
             "4 muddled mint leaves"                    
         ],
         directions: "Muddle mint in a mixing tin. Adding remaining indgredients into mixing tin with ice. Shake and double strain over ice. Top with crushed ice halfmoon and drizzle hibiscus and dandelion root syrup over.",
-        image: "./images/Almond-FennelCooler.jpg",
+        image: "./images/SummerMoon.jpg",
         favorite: "no",
         category: "rum"               
     },
@@ -847,7 +847,7 @@ const drinkSeed = [
             "2 oz. Oregon Pinot Noir"                 
         ],
         directions: "Muddle fresh blueberries at the bottom of a double old fashioned glass and top with ice. Add vodka, lemon, and simple syrup to a mixing glass and shake vigorously until chilled and combined. Strain over ice and blueberries. Carefully pour wine over a spoon into the cocktail to create a red wine 'float'.",
-        image: "./images/OldeGlory.jpg",
+        image: "./images/OldGlory.jpg",
         favorite: "no",
         category: "vodka"               
     },
@@ -979,7 +979,7 @@ const drinkSeed = [
         directions: "Boil simple syrup amd rosemary in a small saucepan, and allow it to cool to room temperature. Strain the syrup and add it to a shaker with bourbon, lemon juice and marmalade. Add ice and shake. Pour into a glass with ice. Add maple syrup, orange juice, and egg white to the shaker. Shake until frothy and pour over cocktail. Garnish with a sprig of rosemary.",
         image: "./images/TheLibertine.jpg",
         favorite: "no",
-        category: "non-alcoholic"               
+        category: "bourbon"               
     },
     {
         name: "The Optimist",
@@ -1037,7 +1037,7 @@ const drinkSeed = [
             "25 dashes Angostura bitters"                 
         ],
         directions: "Place citrus in a warm pot, cook until brown on both sides. Add cider, syrup, pimento dram, bitters and whiskey.(In that order, unless you like fire.) Bring to a simmer and serve in 8 oz. mug. Garnish with one star anise.",
-        image: "./images/.jpg",
+        image: "./images/AutumnLeaves.jpg",
         favorite: "no",
         category: "bourbon"               
     },
@@ -1077,7 +1077,7 @@ const drinkSeed = [
                            
         ],
         directions: "Pour the vodka and nectar into a flute. Top with champagne",
-        image: "./images/.jpg",
+        image: "./images/ApricotFizz.jpg",
         favorite: "no",
         category: "champagne"               
     },

@@ -22,21 +22,23 @@ class Rum extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div className='container drink_div'>
                     <p className="favLabel">Rum Drinks</p>
+                    <div className='row'>
+
+                        {this.state.rumDrinks.map(rumDrink => (
+
+                            <div className='drink_image col-sm-3'>
+
+                                <Link to={"/detail/" + rumDrink._id}>
+                                    <img src={rumDrink.image} ></img>
+                                    <p>{rumDrink.title}</p>
+                                </Link>
+                            </div>
+
+                        ))}
+                    </div>
                 </div>
-
-                {this.state.rumDrinks.map(rum => (
-                
-
-                <div className='drink_image'>
-                   
-                   <Link to={"/detail/" + rum._id}>   
-                        <img src = {rum.image} ></img>
-                        <span>{rum.name}</span>
-                    </Link>
-               </div>
-                ))}
             </div>
         )
     }

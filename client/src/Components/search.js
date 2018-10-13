@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import API from "../utils/api"
+import Modals from './modal'
+
+
 
 class SearchBar extends Component {
    
@@ -43,29 +46,18 @@ class SearchBar extends Component {
     render() {
         return ( 
         <div className='app-header'>
-            <h2>AwesomePour</h2>
-            <Link
+        
+            <a href='/'><h1 id='title'>AwesomePour</h1></a>
 
-                to="/create"
-                className={
-                window.location.pathname === "/create" ? "nav-link active" : "nav-link"
-                }
-                className="linkBtn"
-                >
-                <button>Create your own Drink</button>
-                
-            </Link>
-
-            <br></br>
-            <br></br>
 
             <input 
             value = {this.state.term}
             onChange={this.handleInputChange} 
             />
 
-           
-            <button onClick={this.navigateToDetailPage}>Search By Name</button>
+            <button className='btn btn-lg btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
+
+            <Modals />
         </div>
         );
     }

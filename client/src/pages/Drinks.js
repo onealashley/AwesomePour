@@ -42,7 +42,7 @@ class Drinks extends Component {
                         <Favorites />
                     </div>
                     <p>-----------------------------------------------------------------</p> 
-
+                <div className='main'>
                     <DemoCarousel />
                     <div className='row'>
                         <Gin />
@@ -54,6 +54,7 @@ class Drinks extends Component {
                     <Champagne />
                     <Misc />
                     <Nonalcoholic />
+                    </div>
                 </div>
             )
         }

@@ -22,25 +22,25 @@ class Gin extends Component {
     render() {
         return (
             <div>
-                <div className='container'>
+                <div className='container drink_div'>
                     <p className="favLabel">Gin Drinks</p>
-                        <div className='row'>
+                    <div className='row'>
 
-                    {this.state.ginDrinks.map(ginDrink => (
-                        
+                        {this.state.ginDrinks.map(ginDrink => (
+
                             <div className='drink_image col-sm-3'>
 
                                 <Link to={"/detail/" + ginDrink._id}>
                                     <img src={ginDrink.image} ></img>
-                                    <span>{ginDrink.name}</span>
+                                    <p>{ginDrink.title}</p>
                                 </Link>
                             </div>
-                            
-                    ))}
+
+                        ))}
+                    </div>
                 </div>
-                </div>
-                </div>
-                )
+            </div>
+        )
             }
         
         }

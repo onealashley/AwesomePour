@@ -1,9 +1,11 @@
 .App {
   text-align: center;
-  background-color: #eee;
+  background-color: white;
   padding: 20px;
   color: #3d3d3d;
   height: 100%;
+  font-family: 'Work Sans', sans-serif;
+
 
 }
 
@@ -13,12 +15,14 @@
 
 } */
 
-.App-intro {
-  font-size: large;
-}
 
 #title {
   color: orange;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6em;
+  font-weight: bolder;
+  text-shadow:2px 2px 5px #3d3d3d
+
 }
 
 
@@ -28,7 +32,12 @@
 }
 
 .favLabel {
-  font-size: 30px;
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+color: orange;
+text-shadow:2px 2px 5px #3d3d3d
+
 }
 
 .favs {
@@ -41,6 +50,7 @@
 
 .drink_image{
   color: black;
+  height: 250px;
 }
 
 .drink_image:hover{
@@ -48,9 +58,17 @@
 }
 
 .drink_image img {
-  height:300px;
-  width:300px;
+  height:200px;
+  width:200px;
 }
+
+/* .drink_div{
+  margin-bottom: 200px;
+} */
+
+/* .main{
+  background-color:rgba(224, 127, 0, 0.1)
+} */
 
 .createLabel {
   font-size: 30px;
@@ -89,9 +107,10 @@
   top: 10%;
   left: 25%;
   right: auto;
-  background-color: lightslategrey;
+  /* background-color: lightslategrey; */
   border-radius: 5px;
   height: 400px;
+  background: orange;
   
 }
 
@@ -101,10 +120,20 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(29, 26, 26, .7)
+  /* background: rgb(29, 26, 26, .7) */
   
 }
 
 a:hover {
   color: orange;
 }
+
+.btn {
+  margin:10px;
+  /* border-bottom: blue 7px solid */
+  box-shadow: 2px 2px 4px #3d3d3d;
+}
+
+/* .favorites {
+  /* background-color:rgba(224, 127, 0, 0.1) */
+ 

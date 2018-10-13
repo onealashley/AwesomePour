@@ -68,7 +68,7 @@ class Modals extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.openModal}>Create A Custom Drink</button>
+                <button className ='btn btn-lg btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}

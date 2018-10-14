@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import API from '../utils/api';
 import { Link } from "react-router-dom";
 
@@ -10,33 +10,35 @@ class Bourbon extends Component {
 
     componentDidMount() {
         this.bourbonDrinks();
-        
+
     };
 
     bourbonDrinks = () => {
         API.bourbonDrinks()
-            .then (res => this.setState({ bourbonDrinks: res.data }))
+            .then(res => this.setState({ bourbonDrinks: res.data }))
             .catch(err => console.log(err));
     };
 
     render() {
         return (
             <div>
-                <div>
+                <div className='container drink_div'>
                     <p className="favLabel">Bourbon Drinks</p>
+                    <div className='row'>
+
+                        {this.state.bourbonDrinks.map(bourbonDrink => (
+
+                            <div className='drink_image col-sm-3'>
+
+                                <Link to={"/detail/" + bourbonDrink._id}>
+                                    <img src={bourbonDrink.image} ></img>
+                                    <p>{bourbonDrink.title}</p>
+                                </Link>
+                            </div>
+
+                        ))}
+                    </div>
                 </div>
-
-                {this.state.bourbonDrinks.map(bourbon => (
-                
-
-                <div className='drink_image'>
-                   
-                   <Link to={"/detail/" + bourbon._id}>   
-                        <img src = {bourbon.image} ></img>
-                        <span>{bourbon.name}</span>
-                    </Link>
-               </div>
-                ))}
             </div>
         )
     }

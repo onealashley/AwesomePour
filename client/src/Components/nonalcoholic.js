@@ -22,23 +22,25 @@ class Nonalcoholic extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div className='container drink_div'>
                     <p className="favLabel">Non-Alcoholic Drinks</p>
+                        <div className='row'>
+
+                    {this.state.nonalcoholicDrinks.map(nonAlco => (
+                        
+                            <div className='drink_image col-sm-3'>
+
+                                <Link to={"/detail/" + nonAlco._id}>
+                                    <img src={nonAlco.image} ></img>
+                                    <p>{nonAlco.title}</p>
+                                </Link>
+                            </div>
+                            
+                    ))}
                 </div>
-
-                {this.state.nonalcoholicDrinks.map(nonalcoholic => (
-                
-
-                <div className='drink_image'>
-                   
-                   <Link to={"/detail/" + nonalcoholic._id}>   
-                        <img src = {nonalcoholic.image} ></img>
-                        <span>{nonalcoholic.name}</span>
-                    </Link>
-               </div>
-                ))}
-            </div>
-        )
+                </div>
+                </div>
+                )
     }
 
 }

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import API from '../utils/api';
 import { Link } from "react-router-dom"
+import DeleteBtn from "./DeleteBtn"
 
 class Favorites extends Component {
     state = {
@@ -13,6 +14,13 @@ class Favorites extends Component {
         
     };
 
+    deleteDrink = id => {
+        API.deleteDrink(id)
+          .then(res => this.loadBooks())
+          .catch(err => console.log(err));
+      };
+    
+
     favDrinks = () => {
         API.favDrinks()
             .then (res => this.setState({ favDrinks: res.data }))
@@ -21,7 +29,7 @@ class Favorites extends Component {
 
     render() {
         return (
-            <div>
+            <div className='favorites'>
                 <div>
                     <p className="favLabel">Favorites</p>
                 </div>
@@ -32,7 +40,7 @@ class Favorites extends Component {
                 <div className='drink_image'>
                 <Link to={"/detail/" + favDrink._id}>   
                         <img src = {favDrink.image} ></img>
-                        <span>{favDrink.name}</span>
+                        <span>{favDrink.title}</span>
                     </Link>
                </div>
                 ))}

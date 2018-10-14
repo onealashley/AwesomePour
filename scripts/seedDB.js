@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactdrinklist"
+  "mongodb://localhost/reactdrinklist"||"mongodb://localhost/reactdrinklist"||'mongodb://<dbuser>:<dbpassword>@ds129003.mlab.com:29003/heroku_8fb4vpwf'
 );
 
 

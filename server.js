@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactdrinklist"||'mongodb://codecamp:Skip123!@ds129003.mlab.com:29003/heroku_8fb4vpwf');
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactdrinklist"||'mongodb://Codecamp:Skip123!@ds129003.mlab.com:29003/heroku_8fb4vpwf');
 
 // Add routes, both API and view
 app.use(routes);

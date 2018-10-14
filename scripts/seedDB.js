@@ -373,7 +373,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Hemmingway Daiquiri",
+        title: "Hemingway Daiquiri",
         ingredients: [
             "2 oz. White Rum",
             ".75 oz. Fresh Lime",
@@ -383,7 +383,7 @@ const drinkSeed = [
             "2 lime twists"
         ],
         directions: "Shake and strain. Garnish with a lime wheel.",
-        image: "./images/hemmingway-daiquiri.jpg",
+        image: "./images/hemingway-daiquiri.jpg",
         favorite: "no",
         category: "rum"
     },
@@ -823,7 +823,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        name: "Summer Moon",
+        title: "Summer Moon",
         ingredients: [
             "2 oz. Barcardi Silver rum",
             "1 oz. fresh Lime juice",
@@ -838,7 +838,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        name: "Old Glory",
+        title: "Old Glory",
         ingredients: [
             "8-10 blueberries",
             "2 oz. Long Island Vodka",
@@ -852,7 +852,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "The Chelsea",
+        title: "The Chelsea",
         ingredients: [
             "1.7 oz. Crop Cucumber Vodka",
             "1 oz. St. Germain liqueur",
@@ -865,7 +865,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "Glass Gardens",
+        title: "Glass Gardens",
         ingredients: [
             "2 oz. Vodka",
             "1 oz. Fresh heirloom tomato juice",
@@ -880,7 +880,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "Pear Martini",
+        title: "Pear Martini",
         ingredients: [
             "1.5 oz. vodka",
             "1 oz. Elderflower liqueur ",
@@ -893,7 +893,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "Raspberry Cosmopolitan",
+        title: "Raspberry Cosmopolitan",
         ingredients: [
             "2 oz. Vodka",
             "1 oz. Lemon juice",
@@ -907,7 +907,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "Pumpkin Spice Lebowski",
+        title: "Pumpkin Spice Lebowski",
         ingredients: [
             "2 oz. Reyka Vodka",
             "1 oz. Coffee liqueur",
@@ -921,7 +921,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "20th Century",
+        title: "20th Century",
         ingredients: [
             "1.5 oz. Vodka",
             ".75 oz. Lemon juice",
@@ -936,7 +936,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "The Bloody Fall",
+        title: "The Bloody Fall",
         ingredients: [
             "2 oz. Reyka Vodka",
             "2 oz. Tomato juice",
@@ -950,7 +950,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        name: "Love Letters",
+        title: "Love Letters",
         ingredients: [
             "1 oz. Bourbon",
             ".5 oz. Patron Citronge orange liqueur",
@@ -965,7 +965,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "The Libertine",
+        title: "The Libertine",
         ingredients: [
             "2 oz. Simple syrup",
             "2 sprigs Fresh Rosemary",
@@ -982,7 +982,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "The Optimist",
+        title: "The Optimist",
         ingredients: [
             "2 oz. Lustau Palo Cortado Sherry",
             ".5 oz. Amaro Nonino",
@@ -996,7 +996,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "Casanova",
+        title: "Casanova",
         ingredients: [
             "1 oz. Elijah Craig Small Batch bourbon",
             ".25 oz. Licor 43",
@@ -1012,7 +1012,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "Spice Me Up",
+        title: "Spice Me Up",
         ingredients: [
             "2 oz. Bourbon",
             ".5 oz. Allspice dram(such as Cotton & Reed Allspice Dram)",
@@ -1026,7 +1026,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "Autumn Leaves",
+        title: "Autumn Leaves",
         ingredients: [
             "2 slices Orange",
             "3 slices Lemon",
@@ -1042,7 +1042,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        name: "Royal Julep",
+        title: "Royal Julep",
         ingredients: [
             "1 oz.Absolut Elyx Vodka",
             ".75 oz. Lemon juice",
@@ -1056,7 +1056,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        name: "Pomegranate Royale",
+        title: "Pomegranate Royale",
         ingredients: [
             "5 Pomegranate seeds",
             "1 oz. Pomegranate liqueur",
@@ -1069,7 +1069,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        name: "Apricot Fizz",
+        title: "Apricot Fizz",
         ingredients: [
             "1 tbsp Vodka",
             "2 oz.  Apricot nectar",
@@ -1082,7 +1082,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        name: "Galliano Fizz",
+        title: "Galliano Fizz",
         ingredients: [
             "1.5 oz. Don q anejo tequila",
             ".5 oz. Galliano Yellow",
@@ -1099,7 +1099,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        name: "Imperial Spritz",
+        title: "Imperial Spritz",
         ingredients: [
             ".75 oz. Fresh Lemon juice",
             ".75 oz. Raspberry syrup",
@@ -1115,7 +1115,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        name: "Ingrid Bergman",
+        title: "Ingrid Bergman",
         ingredients: [
             "1 dash Grapefruit bitters",
             "1 dash absinthe",
@@ -1130,7 +1130,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        name: "Cranberry Sparkle",
+        title: "Cranberry Sparkle",
         ingredients: [
             "1.5 oz. Tito's Handmade Vodka",
             ".5 oz. Lime Juice",

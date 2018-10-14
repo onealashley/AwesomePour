@@ -55,7 +55,7 @@ class SearchBar extends Component {
             onChange={this.handleInputChange} 
             />
 
-            <button className='btn btn-lg btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
+            <button className='btn btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
 
             <Modals />
         </div>

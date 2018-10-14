@@ -38,24 +38,26 @@ class Drinks extends Component {
         return (
             <div className='container'>
 
-                    <div>
-                        <Favorites />
-                    </div>
-                    <p>-----------------------------------------------------------------</p> 
+                    
+                    
                 <div className='main'>
-                    <DemoCarousel />
-                    <div className='row'>
-                        <Gin />
+                    <div className="picsDiv">
+                        <DemoCarousel />
                     </div>
                     
+                    
+                    
+                    
+                    <Favorites />
+                    <Gin />
                     <Rum />
                     <Vodka />
                     <Bourbon />
                     <Champagne />
                     <Misc />
                     <Nonalcoholic />
-                    </div>
                 </div>
+            </div>
             )
         }
     }

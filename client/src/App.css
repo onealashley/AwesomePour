@@ -138,7 +138,10 @@ a:hover {
   /* border-bottom: blue 7px solid */
   box-shadow: 2px 2px 4px #3d3d3d;
 }
-
+.picsDiv{
+  width:650px;
+  margin:auto;
+}
 /* .favorites {
   /* background-color:rgba(224, 127, 0, 0.1) */
  

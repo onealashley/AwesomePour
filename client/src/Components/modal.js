@@ -56,12 +56,12 @@ class Modals extends Component {
         console.log("submit");
         event.preventDefault();
             API.saveDrink({
-                title: this.state.title,
+                title: this.state.title.toUpperCase(),
                 ingredients: this.state.ingredients.split(','),
                 directions: this.state.directions,
                 category: this.state.category
             })
-                .then(res => this.closeModal())
+                .then(res => this.closeModal(), window.location.reload())
                 .catch(err => console.log(err));
     };
     
@@ -80,6 +80,7 @@ class Modals extends Component {
                 >
                     <h2 >Create Your Own Drink</h2>
                     <form id="form">
+                        Name
                         <Input
                             value={this.state.title}
                             onChange={this.handleInputChange}
@@ -99,16 +100,16 @@ class Modals extends Component {
                         <option value="misc">Miscellaneous</option>
                         </select> */}
 
-
+                        Ingredients
                         <Input
                             value={this.state.ingredients}
                             onChange={this.handleInputChange}
                             class="inputBox"
                             name="ingredients"
-                            placeholder="Ingredients for the drink (required)"
+                            placeholder="Ingredients for the drink (required). Separate ingredients with commas."
                         />
                         <br></br>
-
+                        Directions
                         <TextArea
                             value={this.state.directions}
                             onChange={this.handleInputChange}

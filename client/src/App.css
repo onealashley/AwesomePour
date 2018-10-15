@@ -114,7 +114,7 @@ text-shadow:2px 2px 5px #3d3d3d
   right: auto;
   /* background-color: lightslategrey; */
   border-radius: 5px;
-  height: 500px;
+  height: 580px;
   background: orange;
   padding-top: 25px;
   
@@ -153,6 +153,7 @@ a:hover {
   height: 60px;
 }
 
+
 @media (min-width: 1200px) {
   .container{
       max-width: 1400px;
@@ -161,4 +162,4 @@ a:hover {
 
 /* .favorites {
   /* background-color:rgba(224, 127, 0, 0.1) */
- 
+

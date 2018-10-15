@@ -29,7 +29,7 @@ class SearchBar extends Component {
           term: value
         }, () => {
             console.log(this.state.term)
-              API.getDrinkName(this.state.term)
+              API.getDrinkName(this.state.term.toUpperCase())
                 .then(response => {
                     console.log(response)
                     this.setState({drink: response})

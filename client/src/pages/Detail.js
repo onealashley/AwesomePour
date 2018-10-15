@@ -68,7 +68,7 @@ class Drinks extends Component {
                 <button className="btn btn-primary" onClick={this.zero} >Zero Scale</button>
                 <h1> Weight: {this.state.weight} </h1>
                 <h3 className="display-str"> {this.state.displayString} </h3>
-                <ProgressBar striped bsStyle="success" now={this.state.progress} >
+                <ProgressBar className='progress' striped bsStyle="success" now={this.state.progress} >
                 </ProgressBar>
                 {/* <h3> progress: {this.state.progress}</h3> */}
                 <button className="btn btn-primary" onClick={this.next}>{this.state.buttonText}</button>
@@ -175,7 +175,7 @@ class Drinks extends Component {
         this.setState({weightReading: weightReading});
         let weightValue=(weightReading-this.state.zero)/27341;
 
-        this.setState({weight: weightValue.toFixed(2)});
+        this.setState({weight: weightValue.toFixed(2) + ' oz'});
         let progress=Math.floor((this.state.weight/this.state.activeIngrWeight)*100);
         
         this.setState({progress: progress})

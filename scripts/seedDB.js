@@ -793,6 +793,34 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
+        title: "Virgin Mojito",
+        ingredients: [
+            "2 oz Apple Juice",
+            "1 oz Lime Juice",
+            ".75oz Simple Syrup (1:1);",
+            "2 Lime Twists",
+            ".5 oz Club Soda",
+            "Large Handful Of Mint"
+        ],
+        directions: "Gently Muddle. Garnish with mint sprig.",
+        image: "./images/Virgin-Mojito.jpg",
+        favorite: "yes",
+        category: "non-alcoholic"
+    },
+    {
+        title: "Arabian Sun",
+        ingredients: [
+            "5 oz Orange Juice",
+            "1 oz Lemonade",
+            "1 oz Grendine"
+        ],
+        directions: "In a wine glass or cocktail glass add crushed ice before pouring in the orange juice. Top up with the the lemonade and give it a quick stir, before drizzling in the grenadine. Don't stir after the pouring in the grenadine, just let the syrup create its own unique pattern through the orange juice and lemonade.",
+        image:"./images/Arabian-Sun.jpg",
+        favorite: "yes",
+        category: "non-alcoholic"
+
+    },
+    {
         title: "The Lamborn",
         ingredients: [
             "2 oz. Mount Gay Silver rum",

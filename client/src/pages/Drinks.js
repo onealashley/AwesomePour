@@ -39,12 +39,15 @@ class Drinks extends Component {
             <div className='container'>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div className='caroRow container'>
                 <DemoCarousel />
 
                 </div>
                 <p>-----------------------------------------------------------------</p>
 =======
+=======
+>>>>>>> master
                     {/* <div>
                         <Favorites />
                     </div> */}

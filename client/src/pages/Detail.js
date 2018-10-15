@@ -22,7 +22,8 @@ class Drinks extends Component {
         activeIngrWeight: "",
         progress: 0,
         activeIngrIndex: 0,
-        displayString: "Place cup on scale then press zero"
+        buttonText:"Start",
+        displayString: "1. Click 'Connect To Scale' to connect the scale. \n 2. Place cup on scale. \n 3. Click the 'Zero Scale' button above. \n 4. Click the 'Start' button below to begin."
         
     }
 
@@ -49,6 +50,7 @@ class Drinks extends Component {
 
     render() {
         return (
+            <div>
             <div className="row">
                    
                 <div className='drinkinfo col-md-4'>
@@ -60,17 +62,19 @@ class Drinks extends Component {
                         ))}
                         <h3>{this.state.drinkinfo.directions}</h3>
                 </div >
-                <div className='pourInfo col-md-6 '>
-                <button onClick={this.connect}> Connect to Scale</button>
-                <button onClick={this.zero} >Zero Scale</button>
+                <div className='pourInfo col-md-8 '>
+                <a href='/'><h1 id='title'>AwesomePour</h1></a>
+                <button className="btn btn-primary" onClick={this.connect}> Connect to Scale</button>
+                <button className="btn btn-primary" onClick={this.zero} >Zero Scale</button>
                 <h1> Weight: {this.state.weight} </h1>
-                <h3> {this.state.displayString} </h3>
+                <h3 className="display-str"> {this.state.displayString} </h3>
                 <ProgressBar striped bsStyle="success" now={this.state.progress} >
                 </ProgressBar>
-                <h3> progress: {this.state.progress}</h3>
-                <button onClick={this.next}>Next</button>
+                {/* <h3> progress: {this.state.progress}</h3> */}
+                <button className="btn btn-primary" onClick={this.next}>{this.state.buttonText}</button>
                 </div>
             </div>
+        </div>
 
         )
     }
@@ -79,6 +83,7 @@ class Drinks extends Component {
 
     next=()=>{
         if(index<this.state.ingredientNames.length){
+            this.setState({buttonText: "Next"})
             this.setState({activeIngrName: this.state.ingredientNames[index]});
             this.setState({activeIngrWeight:
                 this.state.ingredientWeight[index]});
@@ -89,8 +94,12 @@ class Drinks extends Component {
             index++;
             this.zero();
             
-        }else{
+        }else if(index===this.state.ingredientNames.length){
             this.setState({displayString: "Add "+ this.state.otherIngredients.join(", and ")+"\n" +"     Then " +"\n"+this.state.drinkinfo.directions});
+            this.setState({buttonText: "Done"})
+            index++;
+        }else{
+            this.setState({displayString:"Enjoy!!!! and hire someone from our team!!"})
         }
 
     }
@@ -121,12 +130,14 @@ class Drinks extends Component {
 
     zero=()=>{
         this.setState({zero: this.state.weightReading});
+        
     }
 
 
 
     connect=()=>{
         console.log('Requesting Bluetooth Device...');
+        this.setState({weight: "Connecting..."});
         navigator.bluetooth.requestDevice(
         {filters: [{services: ['battery_service','1bc50001-0200-0aa5-e311-24cb004a98c5']}]})
         .then(device => {

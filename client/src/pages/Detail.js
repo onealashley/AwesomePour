@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from '../utils/api';
+import FavBtn from "../Components/FavButton"
 import SearchBar from '../Components/search';
 import Favorites from '../Components/favorites';
 import {ProgressBar} from 'react-bootstrap'
@@ -37,14 +38,22 @@ class Drinks extends Component {
         
     }
 
+    updateFavDrink = id => {
+        API.updateFavDrink(id)
+            .then(res => console.log("added"))
+            .catch(err => console.log(err));
+    }
+
+
+
 
     render() {
         return (
             <div className="row">
-
+                   
                 <div className='drinkinfo col-md-4'>
                     <img src={this.state.drinkinfo.image && this.state.drinkinfo.image.slice(1)} /> 
-                
+                    <FavBtn onClick={() => this.updateFavDrink(this.state.drinkinfo._id)} />
                         <h1>{this.state.drinkinfo.name}</h1>
                         {this.state.drinkinfo.ingredients && this.state.drinkinfo.ingredients.map(ingredient =>(
                             <h2>{ingredient}</h2>
@@ -62,6 +71,7 @@ class Drinks extends Component {
                 <button onClick={this.next}>Next</button>
                 </div>
             </div>
+
         )
     }
 

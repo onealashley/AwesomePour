@@ -72,6 +72,9 @@ class SearchBar extends Component {
                 <a href='#nonalco'><button className='btn btn-warning'>Non-Alcoholic Drinks</button></a>
                 <a href="#vodka"><button className='btn btn-warning'>Vodka Drinks</button></a>
 
+            <button className='btn btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
+>>>>>>> master
+
             </div>
         </div>
         );

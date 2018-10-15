@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactdrinklist"
+  "mongodb://localhost/reactdrinklist"||"mongodb://localhost/reactdrinklist"||'mongodb://Codecamp:Skip123!@ds129003.mlab.com:29003/heroku_8fb4vpwf'
 );
 
 
@@ -739,14 +739,12 @@ const drinkSeed = [
     {
         title: "RASPBERRY FIZZ",
         ingredients: [
-            "8 Raspberries, plus 3 Rasberries skewered on a pick for garnish",
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
-            "2 oz. chilled club soda",
-            "1 Lemon wheel, for garnish"                    
+            "2 oz. chilled club soda"                   
         ],
-        directions: "In a cocktail shaker, muddle the 8 raspberries. Add ice and the lemon juice, rose water and Simple Syrup and shake well. Strain into an ice-filled highball glass. Stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
+        directions: "Add one teaspopn of rose water, one teaspoon of muddled raspberries, 1 lemon wheel and mix until pink ",
         image: "./images/RaspberryFizz.jpg",
         favorite: "no",
         category: "non-alcoholic"               

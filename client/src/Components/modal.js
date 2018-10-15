@@ -57,7 +57,7 @@ class Modals extends Component {
         event.preventDefault();
             API.saveDrink({
                 title: this.state.title.toUpperCase(),
-                ingredients: this.state.ingredients.split(','),
+                ingredients: this.state.ingredients.split(', '),
                 directions: this.state.directions,
                 category: this.state.category
             })

@@ -44,11 +44,11 @@ class Favorites extends Component {
 
     render() {
         return (
-            <div className='favorites'>
+            <div >
                 <div>
                     <p className="favLabel">Favorites</p>
                 </div>
-
+                <div className='favorites' >
                 {this.state.favDrinks.map(favDrink => (
                 
 
@@ -60,6 +60,7 @@ class Favorites extends Component {
                     <DeleteBtn onClick={() => this.updateFavDrinkOff(favDrink._id)} />
                </div>
                 ))}
+                </div>
             </div>
         )
     }

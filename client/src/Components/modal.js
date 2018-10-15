@@ -23,7 +23,7 @@ class Modals extends Component {
         title: "",
         ingredients: [],
         directions: "",
-        category: ""
+        category: "custom"
     };
 
     openModal() {
@@ -61,15 +61,15 @@ class Modals extends Component {
                 directions: this.state.directions,
                 category: this.state.category
             })
-                .then(res => this.loadDrinks())
+                .then(res => this.closeModal())
                 .catch(err => console.log(err));
     };
     
 
     render() {
         return (
-            <div id="modalDiv">
-                <button onClick={this.openModal}>Create A Custom Drink</button>
+            <div>
+                <button className ='btn btn-lg btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}
@@ -79,23 +79,15 @@ class Modals extends Component {
                     contentLabel="Example Modal"
                 >
                     <h2 >Create Your Own Drink</h2>
-                    <form>
+                    <form id="form">
                         <Input
                             value={this.state.title}
                             onChange={this.handleInputChange}
                             class="inputBox"
                             name="title"
-                            placeholder="Name of the drink"
+                            placeholder="Name of the drink (required)"
                         />
                         <br></br>
-
-                        <Input
-                            value={this.state.category}
-                            onChange={this.handleInputChange}
-                            class="inputBox"
-                            name="category"
-                            placeholder="Category of the drink"
-                        />
                         
                         {/* <select value={this.state.category} onChange={this.handleInputChange}>
                         <option value="rum">Rum</option>
@@ -107,15 +99,13 @@ class Modals extends Component {
                         <option value="misc">Miscellaneous</option>
                         </select> */}
 
-                        <br></br>
-                        <br></br>
 
                         <Input
                             value={this.state.ingredients}
                             onChange={this.handleInputChange}
                             class="inputBox"
                             name="ingredients"
-                            placeholder="Ingredients for the drink"
+                            placeholder="Ingredients for the drink (required)"
                         />
                         <br></br>
 
@@ -124,12 +114,13 @@ class Modals extends Component {
                             onChange={this.handleInputChange}
                             class="inputBox2"
                             name="directions"
-                            placeholder="Directions to make the drink"
+                            placeholder="Directions to make the drink (required)"
                         />
 
                         <br></br>
 
                         <FormBtn
+                            disabled={!(this.state.title && this.state.ingredients && this.state.directions)}
                             onClick={this.handleFormSubmit}
                         >
                             Submit drink

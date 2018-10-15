@@ -1,9 +1,11 @@
 .App {
   text-align: center;
-  background-color: #222;
+  background-color: white;
   padding: 20px;
-  color: white;
+  color: #3d3d3d;
   height: 100%;
+  font-family: 'Work Sans', sans-serif;
+
 
 }
 
@@ -13,19 +15,29 @@
 
 } */
 
-.App-intro {
-  font-size: large;
+
+#title {
+  color: orange;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6em;
+  font-weight: bolder;
+  text-shadow:2px 2px 5px #3d3d3d
+
 }
 
-.drink_image{
-  height:200px;
-  width:150px;
-  margin:2px;
-  display: inline-block;
+
+
+.drink_image a{
+  color: #3d3d3d;
 }
 
 .favLabel {
-  font-size: 30px;
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+color: orange;
+text-shadow:2px 2px 5px #3d3d3d
+
 }
 
 .favs {
@@ -36,14 +48,27 @@
   padding: 25px;
 }
 
+.drink_image{
+  color: black;
+  height: 250px;
+}
+
 .drink_image:hover{
   border: white solid 2px;
 }
 
 .drink_image img {
-  height:150px;
-  width:150px;
+  height:200px;
+  width:200px;
 }
+
+/* .drink_div{
+  margin-bottom: 200px;
+} */
+
+/* .main{
+  background-color:rgba(224, 127, 0, 0.1)
+} */
 
 .createLabel {
   font-size: 30px;
@@ -65,7 +90,7 @@
 
 .drinkinfo {
   height: 100%;
-  width: 30%;
+  
   margin-top: 100px;
 }
 
@@ -75,6 +100,11 @@
   border: solid white 1px;
 }
 
+.pourInfo {
+  height: 100%;
+  margin-top: 100px;
+}
+
 .Modal {
   text-align: center;
   position: absolute;
@@ -82,10 +112,16 @@
   top: 10%;
   left: 25%;
   right: auto;
-  background-color: lightslategrey;
+  /* background-color: lightslategrey; */
   border-radius: 5px;
-  height: 450px;
+  height: 500px;
+  background: orange;
+  padding-top: 25px;
   
+}
+
+#form {
+  padding-top: 15px;
 }
 
 .Overlay {
@@ -94,11 +130,20 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(29, 26, 26, .7)
+  /* background: rgb(29, 26, 26, .7) */
   
 }
 
-select {
-  width: 80%;
-  height: 35px;
+a:hover {
+  color: orange;
 }
+
+.btn {
+  margin:10px;
+  /* border-bottom: blue 7px solid */
+  box-shadow: 2px 2px 4px #3d3d3d;
+}
+
+/* .favorites {
+  /* background-color:rgba(224, 127, 0, 0.1) */
+ 

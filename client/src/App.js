@@ -2,24 +2,26 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import "./App.css";
+import SearchBar from './Components/search';
+
 import Drinks from './pages/Drinks';
 import Detail from './pages/Detail'
-import SearchBar from './Components/search'
-import Modals from './Components/modal'
+
 
 
 
 class App extends Component {
- 
+
+
+
 
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="App container">
           <div>
           <SearchBar />
           <br></br>
-          <Modals />
           <Route exact path="/" component={Drinks} />
           <Route exact path="/detail/:id" component={Detail} />
           </div>

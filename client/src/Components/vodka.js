@@ -22,21 +22,23 @@ class Vodka extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div className='container drink_div'>
                     <p className="favLabel">Vodka Drinks</p>
+                    <div className='row'>
+
+                        {this.state.vodkaDrinks.map(vodkaDrink => (
+
+                            <div className='drink_image col-sm-3'>
+
+                                <Link to={"/detail/" + vodkaDrink._id}>
+                                    <img src={vodkaDrink.image} ></img>
+                                    <p>{vodkaDrink.title}</p>
+                                </Link>
+                            </div>
+
+                        ))}
+                    </div>
                 </div>
-
-                {this.state.vodkaDrinks.map(vodka => (
-                
-
-                <div className='drink_image'>
-                   
-                   <Link to={"/detail/" + vodka._id}>   
-                        <img src = {vodka.image} ></img>
-                        <span>{vodka.title}</span>
-                    </Link>
-               </div>
-                ))}
             </div>
         )
     }

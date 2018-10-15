@@ -38,11 +38,19 @@ class Drinks extends Component {
         return (
             <div className='container'>
 
+<<<<<<< HEAD
                 <div className='caroRow container'>
                 <DemoCarousel />
 
                 </div>
                 <p>-----------------------------------------------------------------</p>
+=======
+                    {/* <div>
+                        <Favorites />
+                    </div> */}
+                    <SearchBar />
+                    <p>-----------------------------------------------------------------</p> 
+>>>>>>> master
                 <div className='main'>
 
 

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import API from "../utils/api"
-import Modals from './modal'
+import Modals from './modal';
+import Favorites from "./favorites";
 
 
 
@@ -28,7 +29,7 @@ class SearchBar extends Component {
           term: value
         }, () => {
             console.log(this.state.term)
-              API.getDrinkName(this.state.term)
+              API.getDrinkName(this.state.term.toUpperCase())
                 .then(response => {
                     console.log(response)
                     this.setState({drink: response})
@@ -58,6 +59,7 @@ class SearchBar extends Component {
             <button className='btn btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
 
             <Modals />
+            <Favorites />
         </div>
         );
     }

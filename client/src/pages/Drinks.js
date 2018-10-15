@@ -38,9 +38,10 @@ class Drinks extends Component {
         return (
             <div className='container'>
 
-                    <div>
+                    {/* <div>
                         <Favorites />
-                    </div>
+                    </div> */}
+                    <SearchBar />
                     <p>-----------------------------------------------------------------</p> 
                 <div className='main'>
                     <DemoCarousel />

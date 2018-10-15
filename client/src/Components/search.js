@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import API from "../utils/api"
-import Modals from './modal'
+import Modals from './modal';
+import Favorites from "./favorites";
 
 
 
@@ -58,6 +59,7 @@ class SearchBar extends Component {
             <button className='btn btn-lg btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
 
             <Modals />
+            <Favorites />
         </div>
         );
     }

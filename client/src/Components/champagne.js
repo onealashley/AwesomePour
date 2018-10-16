@@ -32,7 +32,7 @@ class Champagne extends Component {
 
                                 <Link to={"/detail/" + champagneDrink._id}>
                                     <img src={champagneDrink.image} ></img>
-                                    <span>{champagneDrink.title}</span>
+                                    <p>{champagneDrink.title}</p>
                                 </Link>
                             </div>
 

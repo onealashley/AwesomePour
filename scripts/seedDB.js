@@ -127,7 +127,7 @@ const drinkSeed = [
             ".75 oz. Kahlua"
         ],
         directions: "Stir, serve over rocks",
-        image: "./images/black-russian.jpg",
+        image: "./images/Black-Russian.jpg",
         favorite: "no",
         category: "vodka"
     },
@@ -155,7 +155,7 @@ const drinkSeed = [
             ".75 oz. Italian Rosso Vermouth"
         ],
         directions: "Short stir and pour over rocks. Garnish with an orange twist.",
-        image: "./images/boulevardier.jpg",
+        image: "./images/Boulevardier.jpg",
         favorite: "no",
         category: "bourbon"
     },
@@ -205,7 +205,7 @@ const drinkSeed = [
             "3 lime wedges"
         ],
         directions: "Muddle then fill the tin with ice. Shake and dump. Serve with a straw.",
-        image: "./images/caipirina.jpg",
+        image: "./images/Caipirina.jpg",
         favorite: "no",
         category: "rum"
     },
@@ -216,7 +216,7 @@ const drinkSeed = [
             "3 dashes Angostura bitters"
         ],
         directions: "place sugar cube in a cup with bitters. Top with chilled champagne. Garnish with a spiraled lemon twist.",
-        image: "./images/champagne-cocktail.jpg",
+        image: "./images/Champagne-Cocktail.jpg",
         favorite: "no",
         category: "champagne"
     },
@@ -229,7 +229,7 @@ const drinkSeed = [
             ".75 oz. Fresh Lime"
         ],
         directions: "Build in a collins glass with crushed ice. Swizzle then add more crushed ice to just below the top of the glass. Hevily dash a layer of Angostura bitters. Agitate the bitters with a bar spoon to form a consistent layer. Top with fresh crushed ice up, over the rim of the glass. Garnish with grated nutmeg, mint sprig and a straw.",
-        image: "./images/chartreuse-swizzle.jpg",
+        image: "./images/Chartreuse-Swizzle.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -241,7 +241,7 @@ const drinkSeed = [
             ".25 oz. Absinthe"
         ],
         directions: "Short stir and strain over rocks. Garnish with an orange twist.",
-        image: "./images/chrysanthemum.jpg",
+        image: "./images/Chrysanthemum.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -256,7 +256,7 @@ const drinkSeed = [
             "1⁄2 an Egg White"
         ],
         directions: "Muddle the raspberries and shake. Then shake with ice and strain. Garnish with skewered raspberries and a lemon twist.",
-        image: "./images/clover-club.jpg",
+        image: "./images/Clover-Club.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -281,7 +281,7 @@ const drinkSeed = [
             ".75 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain.",
-        image: "./images/daiquiri.jpg",
+        image: "./images/Daiquiri.jpg",
         favorite: "no",
         category: "rum"
     },
@@ -295,7 +295,7 @@ const drinkSeed = [
             "2 cucumber slices"
         ],
         directions: "Shake with 3 ice cubes. Strain into a large rocks glass with crushed ice. Garnish with a mint sprig and a cucumber slice.",
-        image: "./images/eastside.jpg",
+        image: "./images/Eastside.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -307,7 +307,7 @@ const drinkSeed = [
             ".5 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain into a cup or champagne glass. Top wit champagne. Garnish with a lemon twist.",
-        image: "./images/french-75.jpg",
+        image: "./images/French-75.jpg",
         favorite: "no",
         category: "gin"
     }, 
@@ -320,7 +320,7 @@ const drinkSeed = [
             "2 lime twists"
         ],
         directions: "Shake and strain over a rocks glass. Garnish with lime twists.",
-        image: "./images/gimlet.jpg",
+        image: "./images/Gimlet.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -332,7 +332,7 @@ const drinkSeed = [
             ".5 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain into a collins glass over ice. Add 1oz. club soda, and Garnish with a lime wedge.",
-        image: "./images/gin-rickey.jpg",
+        image: "./images/Gin-Rickey.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -343,7 +343,7 @@ const drinkSeed = [
             ".5 oz. DiSaronno"
         ],
         directions: "Stir in a rocks glass. If you are making a Godmother, substitute Vodka for the Scotch.",
-        image: "./images/godfather.jpg",
+        image: "./images/Godfather.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -356,7 +356,7 @@ const drinkSeed = [
             "8 Mint Leaves"
         ],
         directions: "Shake and strain. Garnish with a mint leaf.",
-        image: "./images/Grasshopper.jpg",
+        image: "./images/grasshopper.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -368,7 +368,7 @@ const drinkSeed = [
             ".25 oz. Fernet"
         ],
         directions: "Stir and strain. Garnish with a lemon twist.",
-        image: "./images/hanky-panky.jpg",
+        image: "./images/Hanky-Panky.jpg",
         favorite: "no",
         category: "gin"
     },

@@ -39,7 +39,7 @@ class Drinks extends Component {
         
     }
 
-    updateFavDrink = id => {
+    updateFavoriteDrink = id => {
         API.updateFavDrink(id)
             .then(res => console.log("added"))
             .catch(err => console.log(err));
@@ -55,7 +55,7 @@ class Drinks extends Component {
                    
                 <div className='drinkinfo col-md-4'>
                     <img src={this.state.drinkinfo.image && this.state.drinkinfo.image.slice(1)} /> 
-                    <FavBtn onClick={() => this.updateFavDrink(this.state.drinkinfo._id)} />
+                    <FavBtn onClick={() => this.updateFavoriteDrink(this.state.drinkinfo._id)} />
                         <h1>{this.state.drinkinfo.title}</h1>
                         {this.state.drinkinfo.ingredients && this.state.drinkinfo.ingredients.map(ingredient =>(
                             <h2>{ingredient}</h2>

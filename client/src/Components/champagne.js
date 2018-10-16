@@ -22,7 +22,7 @@ class Champagne extends Component {
     render() {
         return (
             <div>
-                <div className='container drink_div'>
+                <div className='container drink_div' id="champagne">
                     <p className="favLabel">Champagne Drinks</p>
                     <div className='row'>
 

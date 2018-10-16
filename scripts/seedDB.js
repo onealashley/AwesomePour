@@ -797,7 +797,7 @@ const drinkSeed = [
         ingredients: [
             "2 oz Apple Juice",
             "1 oz Lime Juice",
-            ".75oz Simple Syrup (1:1);",
+            ".75 oz Simple Syrup (1:1);",
             "2 Lime Twists",
             ".5 oz Club Soda",
             "Large Handful Of Mint"

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import API from '../utils/api';
 import FavBtn from "../Components/FavButton"
-import SearchBar from '../Components/search';
-import Favorites from '../Components/favorites';
 import {ProgressBar} from 'react-bootstrap'
+import Modal from "react-responsive-modal";
 
 let index=0;
-
 
 class Drinks extends Component {
     
@@ -23,9 +21,19 @@ class Drinks extends Component {
         progress: 0,
         activeIngrIndex: 0,
         buttonText:"Start",
-        displayString: "1. Turn on scale \n 2. Click 'Connect To Scale' above."
+        displayString: "1. Turn on scale \n 2. Click 'Connect To Scale' above.",
+        open: false
         
     }
+
+    onOpenModal = () => {
+        this.setState({ open: true });
+      };
+    
+      onCloseModal = () => {
+        this.setState({ open: false });
+      };
+
 
     componentDidMount() {
         API.getDrink(this.props.match.params.id)
@@ -40,6 +48,7 @@ class Drinks extends Component {
     }
 
     updateFavoriteDrink = id => {
+        this.onOpenModal();
         API.updateFavDrink(id)
             .then(res => console.log("added"))
             .catch(err => console.log(err));
@@ -47,10 +56,14 @@ class Drinks extends Component {
 
 
 
-
     render() {
+        const { open } = this.state;
         return (
             <div>
+                <Modal open={open} onClose={this.onCloseModal} id="Modal" center>
+                <h2>Drink added as a favorite!</h2>
+                </Modal>
+
             <div className="row">
                    
                 <div className='drinkinfo col-md-4'>

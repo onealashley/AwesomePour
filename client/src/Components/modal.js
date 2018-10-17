@@ -1,43 +1,27 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
+import Modal from 'react-responsive-modal';
 import { Input, TextArea, FormBtn } from "../Components/Form";
 import API from "../utils/api"
 
-Modal.setAppElement('#root')
 
 class Modals extends Component {
-    constructor() {
-        super();
 
-        this.state = {
-            modalIsOpen: false
-        };
-
-        this.openModal = this.openModal.bind(this);
-        this.afterOpenModal = this.afterOpenModal.bind(this);
-        this.closeModal = this.closeModal.bind(this);
-
-    }
     state = {
         title: "",
         ingredients: [],
         directions: "",
-        category: "custom"
+        category: "custom",
+        open: false
     };
 
-    openModal() {
-        this.setState({ modalIsOpen: true });
-    }
-
-    afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        ;
-    }
-
-    closeModal() {
-        this.setState({ modalIsOpen: false });
-    }
+    onOpenModal = () => {
+        this.setState({ open: true });
+      };
+    
+      onCloseModal = () => {
+        this.setState({ open: false });
+      };
 
     loadDrinks = () => {
         API.getDrinks()
@@ -67,17 +51,12 @@ class Modals extends Component {
     
 
     render() {
+        const { open } = this.state;
         return (
             <div>
-                <button className ='btn btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
-                <Modal
-                    isOpen={this.state.modalIsOpen}
-                    onAfterOpen={this.afterOpenModal}
-                    onRequestClose={this.closeModal}
-                    className="Modal"
-                    overlayClassName="Overlay"
-                    contentLabel="Example Modal"
-                >
+                <button className ='btn btn-primary'onClick={this.onOpenModal}>Create A Custom Drink</button>
+                <Modal open={open} onClose={this.onCloseModal} id="Modal" center>
+                   
                     <h2 >Create Your Own Drink</h2>
                     <form id="form">
                         Name
@@ -128,7 +107,6 @@ class Modals extends Component {
                         </FormBtn>
                     </form>
                     <br></br>
-                    <button onClick={this.closeModal}>close</button>
                 </Modal>
             </div>
         );

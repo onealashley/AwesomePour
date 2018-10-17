@@ -5,7 +5,7 @@ import "./FavBtn.css";
 // That way we don't have to define them all individually
 const FavBtn = props => (
   <span className="fav-btn" {...props}>
-    <img id="btn" src="../images/fav-mark.jpg"></img>
+    <img id="btn" src="../images/fav-mark.png"></img>
   </span>
 );
 

@@ -33,7 +33,7 @@ const drinkSeed = [
         ],
         directions: "dry shake, shake with ice, fine strain, ice cubes, lemon twist, cherry",
         image: "./images/amaretto-sour.jpg",
-        favorite: "yes",
+        favorite: "no",
         category: "bourbon"
     },
     {
@@ -127,7 +127,7 @@ const drinkSeed = [
             ".75 oz. Kahlua"
         ],
         directions: "Stir, serve over rocks",
-        image: "./images/black-russian.jpg",
+        image: "./images/Black-Russian.jpg",
         favorite: "no",
         category: "vodka"
     },
@@ -155,7 +155,7 @@ const drinkSeed = [
             ".75 oz. Italian Rosso Vermouth"
         ],
         directions: "Short stir and pour over rocks. Garnish with an orange twist.",
-        image: "./images/boulevardier.jpg",
+        image: "./images/Boulevardier.jpg",
         favorite: "no",
         category: "bourbon"
     },
@@ -205,7 +205,7 @@ const drinkSeed = [
             "3 lime wedges"
         ],
         directions: "Muddle then fill the tin with ice. Shake and dump. Serve with a straw.",
-        image: "./images/caipirina.jpg",
+        image: "./images/Caipirina.jpg",
         favorite: "no",
         category: "rum"
     },
@@ -216,7 +216,7 @@ const drinkSeed = [
             "3 dashes Angostura bitters"
         ],
         directions: "place sugar cube in a cup with bitters. Top with chilled champagne. Garnish with a spiraled lemon twist.",
-        image: "./images/champagne-cocktail.jpg",
+        image: "./images/Champagne-Cocktail.jpg",
         favorite: "no",
         category: "champagne"
     },
@@ -229,7 +229,7 @@ const drinkSeed = [
             ".75 oz. Fresh Lime"
         ],
         directions: "Build in a collins glass with crushed ice. Swizzle then add more crushed ice to just below the top of the glass. Hevily dash a layer of Angostura bitters. Agitate the bitters with a bar spoon to form a consistent layer. Top with fresh crushed ice up, over the rim of the glass. Garnish with grated nutmeg, mint sprig and a straw.",
-        image: "./images/chartreuse-swizzle.jpg",
+        image: "./images/Chartreuse-Swizzle.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -241,7 +241,7 @@ const drinkSeed = [
             ".25 oz. Absinthe"
         ],
         directions: "Short stir and strain over rocks. Garnish with an orange twist.",
-        image: "./images/chrysanthemum.jpg",
+        image: "./images/Chrysanthemum.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -256,7 +256,7 @@ const drinkSeed = [
             "1⁄2 an Egg White"
         ],
         directions: "Muddle the raspberries and shake. Then shake with ice and strain. Garnish with skewered raspberries and a lemon twist.",
-        image: "./images/clover-club.jpg",
+        image: "./images/Clover-Club.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -281,7 +281,7 @@ const drinkSeed = [
             ".75 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain.",
-        image: "./images/daiquiri.jpg",
+        image: "./images/Daiquiri.jpg",
         favorite: "no",
         category: "rum"
     },
@@ -295,7 +295,7 @@ const drinkSeed = [
             "2 cucumber slices"
         ],
         directions: "Shake with 3 ice cubes. Strain into a large rocks glass with crushed ice. Garnish with a mint sprig and a cucumber slice.",
-        image: "./images/eastside.jpg",
+        image: "./images/Eastside.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -307,7 +307,7 @@ const drinkSeed = [
             ".5 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain into a cup or champagne glass. Top wit champagne. Garnish with a lemon twist.",
-        image: "./images/french-75.jpg",
+        image: "./images/French-75.jpg",
         favorite: "no",
         category: "gin"
     }, 
@@ -320,7 +320,7 @@ const drinkSeed = [
             "2 lime twists"
         ],
         directions: "Shake and strain over a rocks glass. Garnish with lime twists.",
-        image: "./images/gimlet.jpg",
+        image: "./images/Gimlet.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -332,7 +332,7 @@ const drinkSeed = [
             ".5 oz. Simple Syrup (1:1)"
         ],
         directions: "Shake and strain into a collins glass over ice. Add 1oz. club soda, and Garnish with a lime wedge.",
-        image: "./images/gin-rickey.jpg",
+        image: "./images/Gin-Rickey.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -343,7 +343,7 @@ const drinkSeed = [
             ".5 oz. DiSaronno"
         ],
         directions: "Stir in a rocks glass. If you are making a Godmother, substitute Vodka for the Scotch.",
-        image: "./images/godfather.jpg",
+        image: "./images/Godfather.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -356,7 +356,7 @@ const drinkSeed = [
             "8 Mint Leaves"
         ],
         directions: "Shake and strain. Garnish with a mint leaf.",
-        image: "./images/Grasshopper.jpg",
+        image: "./images/grasshopper.jpg",
         favorite: "no",
         category: "misc"
     },
@@ -368,7 +368,7 @@ const drinkSeed = [
             ".25 oz. Fernet"
         ],
         directions: "Stir and strain. Garnish with a lemon twist.",
-        image: "./images/hanky-panky.jpg",
+        image: "./images/Hanky-Panky.jpg",
         favorite: "no",
         category: "gin"
     },
@@ -683,11 +683,11 @@ const drinkSeed = [
         ingredients: [
             "2 oz. Apple-Ginger Syrup",
             "3 oz. chilled club soda",
-            "2 apple slices"                               
+            "2 apple slices for garnish"                               
         ],
-        directions: "Fill a highball glass with ice. Add the Apple-Ginger Syrup and soda; stir. Garnish with the apple slices.",
+        directions: "stir and enjoy",
         image: "./images/FujiAppleSoda.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic" 
 
     },
@@ -742,11 +742,12 @@ const drinkSeed = [
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
-            "2 oz. chilled club soda"                   
+            "2 oz. chilled club soda",
+            "1 teaspoon of muddled raspberries"                   
         ],
-        directions: "Add one teaspopn of rose water, one teaspoon of muddled raspberries, 1 lemon wheel and mix until pink ",
+        directions: "add 1 lemon wheel and mix until pink ",
         image: "./images/RaspberryFizz.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic"               
     },
     {
@@ -797,12 +798,11 @@ const drinkSeed = [
         ingredients: [
             "2 oz Apple Juice",
             "1 oz Lime Juice",
-            ".75 oz Simple Syrup (1:1);",
-            "2 Lime Twists",
-            ".5 oz Club Soda",
-            "Large Handful Of Mint"
+            ".75 oz Simple Syrup",
+            "1 lime wheel",
+            ".5 oz Club Soda"
         ],
-        directions: "Gently Muddle. Garnish with mint sprig.",
+        directions: "add mint to taste and gently muddle.",
         image: "./images/Virgin-Mojito.jpg",
         favorite: "yes",
         category: "non-alcoholic"
@@ -812,9 +812,9 @@ const drinkSeed = [
         ingredients: [
             "5 oz Orange Juice",
             "1 oz Lemonade",
-            "1 oz Grendine"
+            "Grenadine drizzled to taste"
         ],
-        directions: "In a wine glass or cocktail glass add crushed ice before pouring in the orange juice. Top up with the the lemonade and give it a quick stir, before drizzling in the grenadine. Don't stir after the pouring in the grenadine, just let the syrup create its own unique pattern through the orange juice and lemonade.",
+        directions: " just let the syrup create its own unique pattern through the orange juice and lemonade.",
         image:"./images/Arabian-Sun.jpg",
         favorite: "yes",
         category: "non-alcoholic"

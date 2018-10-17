@@ -1,5 +1,14 @@
 .fav-btn {
   margin-left: -53px;
+  margin-top:244px;
+}
+#btn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#btn:active{
+  transform: scale(.5);
 }
 
 #btn {
@@ -7,3 +16,4 @@
   width: 50px;
   margin-top: 244px;
 }
+

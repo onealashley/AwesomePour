@@ -2,8 +2,7 @@ import React, {Component} from "react";
 import API from '../utils/api';
 import { Link } from "react-router-dom";
 import DeleteBtn from "./DeleteBtn";
-import favbtn from "./FavButton";
-import FavBtn from "./FavButton";
+
 
 class Favorites extends Component {
     state = {
@@ -29,8 +28,9 @@ class Favorites extends Component {
     };
 
     updateFavDrinkOff = id => {
+        this.onOpenModal();
         API.updateFavDrinkOff(id)
-            .then(window.location.reload())
+            .then(window.location.pathname = "/")
             .catch(err => console.log(err));
     }
     

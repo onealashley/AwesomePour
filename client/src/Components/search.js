@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import API from "../utils/api"
 import Modals from './modal';
 import Favorites from "./favorites";
+import Modal2 from "react-responsive-modal";
 
 
 
@@ -20,6 +21,18 @@ class SearchBar extends Component {
             weight: " Not Connected"
         }
     }
+
+    state = {
+        open: false
+    }
+
+    onOpenModal = () => {
+        this.setState({ open: true });
+      };
+    
+      onCloseModal = () => {
+        this.setState({ open: false });
+      };
 
     handleInputChange = (event) => {
 
@@ -40,7 +53,7 @@ class SearchBar extends Component {
 
     navigateToDetailPage = () => {
         if (this.state.drink === undefined) {
-            window.location.reload();
+            this.onOpenModal();   
         } else {
             window.location.pathname = "detail/" + this.state.drink._id;
         }
@@ -49,6 +62,7 @@ class SearchBar extends Component {
 
 
     render() {
+        const { open } = this.state;
         return (
             <div className='app-header'>
 
@@ -61,8 +75,10 @@ class SearchBar extends Component {
                 />
 
             <button className='btn btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
-
             <Modals />
+            <Modal2 open={open} onClose={this.onCloseModal} id="Modal" center>
+                <h2>Drink not found!</h2>
+            </Modal2>
             <div className="nav">
                 <a href="#gin"><button className='btn btn-warning'>Gin Drinks</button></a>
                 <a href="#rum"><button className='btn btn-warning'>Rum Drinks</button></a>

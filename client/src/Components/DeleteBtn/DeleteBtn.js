@@ -5,7 +5,7 @@ import "./DeleteBtn.css";
 // That way we don't have to define them all individually
 const DeleteBtn = props => (
   <span className="delete-btn" {...props}>
-    <img id="del-btn" src="../images/x-mark.jpg"></img>
+    <img id="del-btn" src="../images/x-mark.png"></img>
   </span>
 );
 

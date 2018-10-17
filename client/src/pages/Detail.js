@@ -95,7 +95,7 @@ class Drinks extends Component {
             this.zero();
             
         }else if(index===this.state.ingredientNames.length){
-            this.setState({displayString: "Add "+ this.state.otherIngredients.join(", and ")+"\n" +"     Then " +"\n"+this.state.drinkinfo.directions});
+            this.setState({displayString: "Add: "+ this.state.otherIngredients.join(", and ")+"\n"+"\n"+"Then: " +"\n"+this.state.drinkinfo.directions});
             this.setState({buttonText: "Done"})
             index++;
         }else{

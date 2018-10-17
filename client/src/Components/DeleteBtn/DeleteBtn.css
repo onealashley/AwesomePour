@@ -8,3 +8,12 @@
   margin-top: -137px;
   margin-left: 156px;
 }
+
+#del-btn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#del-btn:active{
+  transform: scale(.5);
+}

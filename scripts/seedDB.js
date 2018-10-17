@@ -33,7 +33,7 @@ const drinkSeed = [
         ],
         directions: "dry shake, shake with ice, fine strain, ice cubes, lemon twist, cherry",
         image: "./images/amaretto-sour.jpg",
-        favorite: "yes",
+        favorite: "no",
         category: "bourbon"
     },
     {
@@ -683,11 +683,11 @@ const drinkSeed = [
         ingredients: [
             "2 oz. Apple-Ginger Syrup",
             "3 oz. chilled club soda",
-            "2 apple slices"                               
+            "2 apple slices for garnish"                               
         ],
-        directions: "Fill a highball glass with ice. Add the Apple-Ginger Syrup and soda; stir. Garnish with the apple slices.",
+        directions: "stir and enjoy",
         image: "./images/FujiAppleSoda.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic" 
 
     },
@@ -742,11 +742,12 @@ const drinkSeed = [
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
-            "2 oz. chilled club soda"                   
+            "2 oz. chilled club soda",
+            "1 teaspoon of muddled raspberries"                   
         ],
-        directions: "Add one teaspopn of rose water, one teaspoon of muddled raspberries, 1 lemon wheel and mix until pink ",
+        directions: "add 1 lemon wheel and mix until pink ",
         image: "./images/RaspberryFizz.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic"               
     },
     {
@@ -797,12 +798,11 @@ const drinkSeed = [
         ingredients: [
             "2 oz Apple Juice",
             "1 oz Lime Juice",
-            ".75 oz Simple Syrup (1:1);",
-            "2 Lime Twists",
-            ".5 oz Club Soda",
-            "Large Handful Of Mint"
+            ".75 oz Simple Syrup",
+            "1 lime wheel",
+            ".5 oz Club Soda"
         ],
-        directions: "Gently Muddle. Garnish with mint sprig.",
+        directions: "add mint to taste and gently muddle.",
         image: "./images/Virgin-Mojito.jpg",
         favorite: "yes",
         category: "non-alcoholic"
@@ -812,9 +812,9 @@ const drinkSeed = [
         ingredients: [
             "5 oz Orange Juice",
             "1 oz Lemonade",
-            "1 oz Grendine"
+            "Grenadine drizzled to taste"
         ],
-        directions: "In a wine glass or cocktail glass add crushed ice before pouring in the orange juice. Top up with the the lemonade and give it a quick stir, before drizzling in the grenadine. Don't stir after the pouring in the grenadine, just let the syrup create its own unique pattern through the orange juice and lemonade.",
+        directions: " just let the syrup create its own unique pattern through the orange juice and lemonade.",
         image:"./images/Arabian-Sun.jpg",
         favorite: "yes",
         category: "non-alcoholic"

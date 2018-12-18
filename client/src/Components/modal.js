@@ -1,43 +1,27 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
+import Modal from 'react-responsive-modal';
 import { Input, TextArea, FormBtn } from "../Components/Form";
 import API from "../utils/api"
 
-Modal.setAppElement('#root')
 
 class Modals extends Component {
-    constructor() {
-        super();
 
-        this.state = {
-            modalIsOpen: false
-        };
-
-        this.openModal = this.openModal.bind(this);
-        this.afterOpenModal = this.afterOpenModal.bind(this);
-        this.closeModal = this.closeModal.bind(this);
-
-    }
     state = {
         title: "",
         ingredients: [],
         directions: "",
-        category: "custom"
+        category: "custom",
+        open: false
     };
 
-    openModal() {
-        this.setState({ modalIsOpen: true });
-    }
-
-    afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        ;
-    }
-
-    closeModal() {
-        this.setState({ modalIsOpen: false });
-    }
+    onOpenModal = () => {
+        this.setState({ open: true });
+      };
+    
+      onCloseModal = () => {
+        this.setState({ open: false });
+      };
 
     loadDrinks = () => {
         API.getDrinks()
@@ -56,30 +40,26 @@ class Modals extends Component {
         console.log("submit");
         event.preventDefault();
             API.saveDrink({
-                title: this.state.title,
-                ingredients: this.state.ingredients.split(','),
+                title: this.state.title.toUpperCase(),
+                ingredients: this.state.ingredients.split(', '),
                 directions: this.state.directions,
                 category: this.state.category
             })
-                .then(res => this.closeModal())
+                .then(res => this.closeModal(), window.location.reload())
                 .catch(err => console.log(err));
     };
     
 
     render() {
+        const { open } = this.state;
         return (
             <div>
-                <button className ='btn btn-lg btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
-                <Modal
-                    isOpen={this.state.modalIsOpen}
-                    onAfterOpen={this.afterOpenModal}
-                    onRequestClose={this.closeModal}
-                    className="Modal"
-                    overlayClassName="Overlay"
-                    contentLabel="Example Modal"
-                >
+                <button className ='btn btn-primary'onClick={this.onOpenModal}>Create A Custom Drink</button>
+                <Modal open={open} onClose={this.onCloseModal} id="Modal" center>
+                   
                     <h2 >Create Your Own Drink</h2>
                     <form id="form">
+                        Name
                         <Input
                             value={this.state.title}
                             onChange={this.handleInputChange}
@@ -99,16 +79,16 @@ class Modals extends Component {
                         <option value="misc">Miscellaneous</option>
                         </select> */}
 
-
+                        Ingredients
                         <Input
                             value={this.state.ingredients}
                             onChange={this.handleInputChange}
                             class="inputBox"
                             name="ingredients"
-                            placeholder="Ingredients for the drink (required)"
+                            placeholder="Ingredients for the drink (required). Separate ingredients with commas."
                         />
                         <br></br>
-
+                        Directions
                         <TextArea
                             value={this.state.directions}
                             onChange={this.handleInputChange}
@@ -127,7 +107,6 @@ class Modals extends Component {
                         </FormBtn>
                     </form>
                     <br></br>
-                    <button onClick={this.closeModal}>close</button>
                 </Modal>
             </div>
         );

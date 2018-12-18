@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import API from '../utils/api';
 import FavBtn from "../Components/FavButton"
-import SearchBar from '../Components/search';
-import Favorites from '../Components/favorites';
 import {ProgressBar} from 'react-bootstrap'
+import Modal from "react-responsive-modal";
 
 let index=0;
-
 
 class Drinks extends Component {
     
     state = {
-        drinkinfo: "nothing yet!",
+        drinkinfo: "",
         zero: 268371,
         weightReading: 0,
         weight:" Not Connected",
@@ -23,9 +21,19 @@ class Drinks extends Component {
         progress: 0,
         activeIngrIndex: 0,
         buttonText:"Start",
-        displayString: "1. Click 'Connect To Scale' to connect the scale. \n 2. Place cup on scale. \n 3. Click the 'Zero Scale' button above. \n 4. Click the 'Start' button below to begin."
+        displayString: "1. Turn on scale \n 2. Click 'Connect To Scale' above.",
+        open: false
         
     }
+
+    onOpenModal = () => {
+        this.setState({ open: true });
+      };
+    
+      onCloseModal = () => {
+        this.setState({ open: false });
+      };
+
 
     componentDidMount() {
         API.getDrink(this.props.match.params.id)
@@ -39,7 +47,8 @@ class Drinks extends Component {
         
     }
 
-    updateFavDrink = id => {
+    updateFavoriteDrink = id => {
+        this.onOpenModal();
         API.updateFavDrink(id)
             .then(res => console.log("added"))
             .catch(err => console.log(err));
@@ -47,16 +56,20 @@ class Drinks extends Component {
 
 
 
-
     render() {
+        const { open } = this.state;
         return (
             <div>
+                <Modal open={open} onClose={this.onCloseModal} id="Modal" center>
+                <h2>Drink added as a favorite!</h2>
+                </Modal>
+
             <div className="row">
                    
                 <div className='drinkinfo col-md-4'>
                     <img src={this.state.drinkinfo.image && this.state.drinkinfo.image.slice(1)} /> 
-                    <FavBtn onClick={() => this.updateFavDrink(this.state.drinkinfo._id)} />
-                        <h1>{this.state.drinkinfo.name}</h1>
+                    <FavBtn onClick={() => this.updateFavoriteDrink(this.state.drinkinfo._id)} />
+                        <h1>{this.state.drinkinfo.title}</h1>
                         {this.state.drinkinfo.ingredients && this.state.drinkinfo.ingredients.map(ingredient =>(
                             <h2>{ingredient}</h2>
                         ))}
@@ -95,7 +108,7 @@ class Drinks extends Component {
             this.zero();
             
         }else if(index===this.state.ingredientNames.length){
-            this.setState({displayString: "Add "+ this.state.otherIngredients.join(", and ")+"\n" +"     Then " +"\n"+this.state.drinkinfo.directions});
+            this.setState({displayString: "Add: "+ this.state.otherIngredients.join(", and ")+"\n"+"\n"+"Then: " +"\n"+this.state.drinkinfo.directions});
             this.setState({buttonText: "Done"})
             index++;
         }else{
@@ -138,6 +151,7 @@ class Drinks extends Component {
     connect=()=>{
         console.log('Requesting Bluetooth Device...');
         this.setState({weight: "Connecting..."});
+        this.setState({displayString:" 1. Place cup on scale. \n 3. Click the 'Zero Scale' button above. \n 4. Click the 'Start' button below to begin."})
         navigator.bluetooth.requestDevice(
         {filters: [{services: ['battery_service','1bc50001-0200-0aa5-e311-24cb004a98c5']}]})
         .then(device => {

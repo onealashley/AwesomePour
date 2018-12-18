@@ -1,4 +1,4 @@
-const express = require("express");
+ const express = require("express");
 // const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes");
@@ -14,10 +14,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/reactdrinklist";
-
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
+-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactdrinklist"||'mongodb://Codecamp:Skip123!@ds129003.mlab.com:29003/heroku_8fb4vpwf');
 // Add routes, both API and view
 app.use(routes);
 

@@ -2,8 +2,7 @@ import React, {Component} from "react";
 import API from '../utils/api';
 import { Link } from "react-router-dom";
 import DeleteBtn from "./DeleteBtn";
-import favbtn from "./FavButton";
-import FavBtn from "./FavButton";
+
 
 class Favorites extends Component {
     state = {
@@ -29,8 +28,9 @@ class Favorites extends Component {
     };
 
     updateFavDrinkOff = id => {
+        this.onOpenModal();
         API.updateFavDrinkOff(id)
-            .then(window.location.reload())
+            .then(window.location.pathname = "/")
             .catch(err => console.log(err));
     }
     
@@ -44,22 +44,23 @@ class Favorites extends Component {
 
     render() {
         return (
-            <div className='favorites'>
-                <div>
+            <div>
+                <div className='container'>
                     <p className="favLabel">Favorites</p>
                 </div>
-
+                <div className='favorites row'>
                 {this.state.favDrinks.map(favDrink => (
                 
 
-                <div className='drink_image'>
+                <div className='drink_image col-md-4'>
                     <Link to={"/detail/" + favDrink._id}>   
                         <img src = {favDrink.image} ></img>
-                        <span>{favDrink.title}</span>
+                        <p>{favDrink.title}</p>
                     </Link>
                     <DeleteBtn onClick={() => this.updateFavDrinkOff(favDrink._id)} />
                </div>
                 ))}
+                </div>
             </div>
         )
     }
